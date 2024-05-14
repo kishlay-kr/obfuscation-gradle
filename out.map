@@ -1,0 +1,1408 @@
+com.edge.proguard.obfuscation.demo.ObfuscationDemoApplication -> com.edge.proguard.obfuscation.demo.ObfuscationDemoApplication:
+# {"fileName":"ObfuscationDemoApplication.java","id":"sourceFile"}
+    7:7:void <init>() -> <init>
+    10:11:void main(java.lang.String[]) -> main
+org.springframework.boot.loader.jar.ManifestInfo -> org.springframework.boot.loader.a.a:
+# {"fileName":"ManifestInfo.java","id":"sourceFile"}
+    java.util.jar.Attributes$Name MULTI_RELEASE -> b
+    org.springframework.boot.loader.jar.ManifestInfo NONE -> a
+    java.util.jar.Manifest manifest -> c
+    java.lang.Boolean multiRelease -> d
+    45:46:void <init>(java.util.jar.Manifest) -> <init>
+    48:51:void <init>(java.util.jar.Manifest,java.lang.Boolean) -> <init>
+    58:58:java.util.jar.Manifest getManifest() -> a
+    66:76:boolean isMultiRelease() -> b
+    32:34:void <clinit>() -> <clinit>
+org.springframework.boot.loader.jar.MetaInfVersionsInfo -> org.springframework.boot.loader.a.b:
+# {"fileName":"MetaInfVersionsInfo.java","id":"sourceFile"}
+    org.springframework.boot.loader.jar.MetaInfVersionsInfo NONE -> a
+    int[] versions -> b
+    java.lang.String[] directories -> c
+    42:45:void <init>(java.util.Set) -> <init>
+    52:52:int[] versions() -> a
+    60:60:java.lang.String[] directories() -> b
+    69:69:org.springframework.boot.loader.jar.MetaInfVersionsInfo get(org.springframework.boot.loader.zip.ZipContent) -> a
+    79:97:org.springframework.boot.loader.jar.MetaInfVersionsInfo get(int,java.util.function.IntFunction) -> a
+    44:44:java.lang.String[] lambda$new$1(int) -> a
+    44:44:java.lang.String lambda$new$0(java.lang.Integer) -> a
+    34:34:void <clinit>() -> <clinit>
+org.springframework.boot.loader.jar.NestedJarFile -> org.springframework.boot.loader.a.c:
+# {"fileName":"NestedJarFile.java","id":"sourceFile"}
+    int BASE_VERSION -> a
+    org.springframework.boot.loader.log.DebugLogger debug -> b
+    org.springframework.boot.loader.ref.Cleaner cleaner -> c
+    org.springframework.boot.loader.jar.NestedJarFileResources resources -> d
+    java.lang.ref.Cleaner$Cleanable cleanup -> e
+    java.lang.String name -> f
+    int version -> g
+    org.springframework.boot.loader.jar.NestedJarFile$NestedJarEntry lastEntry -> h
+    boolean closed -> i
+    org.springframework.boot.loader.jar.ManifestInfo manifestInfo -> j
+    org.springframework.boot.loader.jar.MetaInfVersionsInfo metaInfVersionsInfo -> k
+    124:125:void <init>(java.io.File,java.lang.String,java.lang.Runtime$Version) -> <init>
+    141:151:void <init>(java.io.File,java.lang.String,java.lang.Runtime$Version,boolean,org.springframework.boot.loader.ref.Cleaner) -> <init>
+    154:157:org.springframework.boot.loader.jar.NestedJarFile$RawZipDataInputStream getRawZipDataInputStream$4ad57608() -> a
+    163:168:java.util.jar.Manifest getManifest() -> getManifest
+    174:177:java.util.Enumeration entries() -> entries
+    182:185:java.util.stream.Stream stream() -> stream
+    190:197:java.util.stream.Stream versionedStream() -> versionedStream
+    201:202:java.util.stream.Stream streamContentEntries() -> b
+    206:224:java.lang.String getBaseName(org.springframework.boot.loader.zip.ZipContent$Entry) -> a
+    229:229:java.util.jar.JarEntry getJarEntry(java.lang.String) -> getJarEntry
+    234:234:java.util.jar.JarEntry getEntry(java.lang.String) -> a
+    243:254:boolean hasEntry(java.lang.String) -> b
+    258:270:org.springframework.boot.loader.jar.NestedJarFile$NestedJarEntry getNestedJarEntry(java.lang.String) -> c
+    276:290:org.springframework.boot.loader.zip.ZipContent$Entry getVersionedContentEntry(java.lang.String) -> d
+    294:297:org.springframework.boot.loader.zip.ZipContent$Entry getContentEntry(java.lang.String,java.lang.String) -> a
+    301:310:org.springframework.boot.loader.jar.ManifestInfo getManifestInfo() -> c
+    314:325:org.springframework.boot.loader.jar.ManifestInfo getManifestInfo(org.springframework.boot.loader.zip.ZipContent) -> a
+    330:340:org.springframework.boot.loader.jar.MetaInfVersionsInfo getMetaInfVersionsInfo() -> d
+    345:349:java.io.InputStream getInputStream(java.util.zip.ZipEntry) -> getInputStream
+    1575:1575:boolean org.springframework.boot.loader.jar.NestedJarFile$NestedJarEntry.isOwnedBy(org.springframework.boot.loader.jar.NestedJarFile):575:575 -> getInputStream
+    1575:1575:java.io.InputStream getInputStream(java.util.zip.ZipEntry):346 -> getInputStream
+    353:371:java.io.InputStream getInputStream(org.springframework.boot.loader.zip.ZipContent$Entry) -> b
+    376:379:java.lang.String getComment() -> getComment
+    384:387:int size() -> size
+    392:405:void close() -> close
+    409:409:java.lang.String getName() -> getName
+    413:419:void ensureOpen() -> e
+    60:60:java.util.zip.ZipEntry getEntry(java.lang.String) -> getEntry
+    184:184:java.util.jar.JarEntry lambda$stream$0(org.springframework.boot.loader.zip.ZipContent$Entry) -> c
+    68:70:void <clinit>() -> <clinit>
+org.springframework.boot.loader.jar.NestedJarFile$JarEntriesEnumeration -> org.springframework.boot.loader.a.d:
+# {"fileName":"NestedJarFile.java","id":"sourceFile"}
+    org.springframework.boot.loader.zip.ZipContent zipContent -> a
+    int cursor -> b
+    org.springframework.boot.loader.jar.NestedJarFile this$0 -> c
+    638:640:void <init>(org.springframework.boot.loader.jar.NestedJarFile,org.springframework.boot.loader.zip.ZipContent) -> <init>
+    644:644:boolean hasMoreElements() -> hasMoreElements
+    649:655:org.springframework.boot.loader.jar.NestedJarFile$NestedJarEntry nextElement() -> a
+    632:632:java.lang.Object nextElement() -> nextElement
+org.springframework.boot.loader.jar.NestedJarFile$JarEntryInflaterInputStream -> org.springframework.boot.loader.a.e:
+# {"fileName":"NestedJarFile.java","id":"sourceFile"}
+    java.lang.ref.Cleaner$Cleanable cleanup -> a
+    boolean closed -> b
+    org.springframework.boot.loader.jar.NestedJarFile this$0 -> c
+    796:797:void <init>(org.springframework.boot.loader.jar.NestedJarFile,org.springframework.boot.loader.jar.NestedJarFile$JarEntryInputStream,org.springframework.boot.loader.jar.NestedJarFileResources) -> <init>
+    800:803:void <init>(org.springframework.boot.loader.jar.NestedJarFile,org.springframework.boot.loader.jar.NestedJarFile$JarEntryInputStream,org.springframework.boot.loader.jar.NestedJarFileResources,java.util.zip.Inflater) -> <init>
+    807:814:void close() -> close
+org.springframework.boot.loader.jar.NestedJarFile$JarEntryInputStream -> org.springframework.boot.loader.a.f:
+# {"fileName":"NestedJarFile.java","id":"sourceFile"}
+    int uncompressedSize -> a
+    org.springframework.boot.loader.zip.CloseableDataBlock content -> b
+    long pos -> c
+    long remaining -> d
+    boolean closed -> e
+    org.springframework.boot.loader.jar.NestedJarFile this$0 -> f
+    706:709:void <init>(org.springframework.boot.loader.jar.NestedJarFile,org.springframework.boot.loader.zip.ZipContent$Entry) -> <init>
+    713:714:int read() -> read
+    720:733:int read(byte[],int,int) -> read
+    1765:1768:void ensureOpen():765:768 -> read
+    1765:1768:int read(byte[],int,int):721 -> read
+    739:747:long skip(long) -> skip
+    2751:2752:long maxForwardSkip(long):751:752 -> skip
+    2751:2752:long skip(long):740 -> skip
+    2756:2756:long maxBackwardSkip(long):756:756 -> skip
+    2756:2756:long skip(long):740 -> skip
+    761:761:int available() -> available
+    772:778:void close() -> close
+    781:781:int getUncompressedSize() -> a
+org.springframework.boot.loader.jar.NestedJarFile$NestedJarEntry -> org.springframework.boot.loader.a.g:
+# {"fileName":"NestedJarFile.java","id":"sourceFile"}
+    java.lang.IllegalStateException CANNOT_BE_MODIFIED_EXCEPTION -> b
+    org.springframework.boot.loader.zip.ZipContent$Entry contentEntry -> c
+    java.lang.String name -> d
+    boolean populated -> e
+    org.springframework.boot.loader.jar.NestedJarFile this$0 -> a
+    445:446:void <init>(org.springframework.boot.loader.jar.NestedJarFile,org.springframework.boot.loader.zip.ZipContent$Entry) -> <init>
+    448:452:void <init>(org.springframework.boot.loader.jar.NestedJarFile,org.springframework.boot.loader.zip.ZipContent$Entry,java.lang.String) -> <init>
+    456:457:long getTime() -> getTime
+    462:463:java.time.LocalDateTime getTimeLocal() -> getTimeLocal
+    468:468:void setTime(long) -> setTime
+    473:473:void setTimeLocal(java.time.LocalDateTime) -> setTimeLocal
+    478:479:java.nio.file.attribute.FileTime getLastModifiedTime() -> getLastModifiedTime
+    484:484:java.util.zip.ZipEntry setLastModifiedTime(java.nio.file.attribute.FileTime) -> setLastModifiedTime
+    489:490:java.nio.file.attribute.FileTime getLastAccessTime() -> getLastAccessTime
+    495:495:java.util.zip.ZipEntry setLastAccessTime(java.nio.file.attribute.FileTime) -> setLastAccessTime
+    500:501:java.nio.file.attribute.FileTime getCreationTime() -> getCreationTime
+    506:506:java.util.zip.ZipEntry setCreationTime(java.nio.file.attribute.FileTime) -> setCreationTime
+    511:511:long getSize() -> getSize
+    516:516:void setSize(long) -> setSize
+    521:522:long getCompressedSize() -> getCompressedSize
+    527:527:void setCompressedSize(long) -> setCompressedSize
+    532:533:long getCrc() -> getCrc
+    538:538:void setCrc(long) -> setCrc
+    543:544:int getMethod() -> getMethod
+    549:549:void setMethod(int) -> setMethod
+    554:555:byte[] getExtra() -> getExtra
+    560:560:void setExtra(byte[]) -> setExtra
+    565:566:java.lang.String getComment() -> getComment
+    571:571:void setComment(java.lang.String) -> setComment
+    580:580:java.lang.String getRealName() -> getRealName
+    585:585:java.lang.String getName() -> getName
+    590:591:java.util.jar.Attributes getAttributes() -> getAttributes
+    596:596:java.security.cert.Certificate[] getCertificates() -> getCertificates
+    1609:1609:org.springframework.boot.loader.zip.ZipContent$Entry contentEntry():609:609 -> getCertificates
+    1609:1609:java.security.cert.Certificate[] getCertificates():596 -> getCertificates
+    601:601:java.security.CodeSigner[] getCodeSigners() -> getCodeSigners
+    2609:2609:org.springframework.boot.loader.zip.ZipContent$Entry contentEntry():609:609 -> getCodeSigners
+    2609:2609:java.security.CodeSigner[] getCodeSigners():601 -> getCodeSigners
+    605:605:org.springframework.boot.loader.jar.SecurityInfo getSecurityInfo() -> b
+    609:609:org.springframework.boot.loader.zip.ZipContent$Entry contentEntry() -> a
+    613:625:void populate() -> c
+    435:435:void <clinit>() -> <clinit>
+org.springframework.boot.loader.jar.NestedJarFile$RawZipDataInputStream -> org.springframework.boot.loader.a.h:
+# {"fileName":"NestedJarFile.java","id":"sourceFile"}
+    boolean closed -> a
+    org.springframework.boot.loader.jar.NestedJarFile this$0 -> b
+    825:827:void <init>(org.springframework.boot.loader.jar.NestedJarFile,java.io.InputStream) -> <init>
+    831:837:void close() -> close
+org.springframework.boot.loader.jar.NestedJarFile$ZipContentEntriesSpliterator -> org.springframework.boot.loader.a.i:
+# {"fileName":"NestedJarFile.java","id":"sourceFile"}
+    org.springframework.boot.loader.zip.ZipContent zipContent -> a
+    int cursor -> b
+    org.springframework.boot.loader.jar.NestedJarFile this$0 -> c
+    672:675:void <init>(org.springframework.boot.loader.jar.NestedJarFile,org.springframework.boot.loader.zip.ZipContent) -> <init>
+    679:686:boolean tryAdvance(java.util.function.Consumer) -> tryAdvance
+org.springframework.boot.loader.jar.NestedJarFileResources -> org.springframework.boot.loader.a.j:
+# {"fileName":"NestedJarFileResources.java","id":"sourceFile"}
+    org.springframework.boot.loader.zip.ZipContent zipContent -> a
+    org.springframework.boot.loader.zip.ZipContent zipContentForManifest -> b
+    java.util.Set inputStreams -> c
+    java.util.Deque inflaterCache -> d
+    49:63:void <init>(java.io.File,java.lang.String) -> <init>
+    70:70:org.springframework.boot.loader.zip.ZipContent zipContent() -> a
+    79:79:org.springframework.boot.loader.zip.ZipContent zipContentForManifest() -> b
+    87:90:void addInputStream(java.io.InputStream) -> a
+    97:100:void removeInputStream(java.io.InputStream) -> b
+    108:108:java.lang.Runnable createInflatorCleanupAction(java.util.zip.Inflater) -> a
+    116:125:java.util.zip.Inflater getOrCreateInflater() -> c
+    153:154:void run() -> run
+    1157:1165:void releaseAll():157:165 -> run
+    1157:1165:void run():153 -> run
+    168:179:java.io.IOException releaseInflators(java.io.IOException) -> a
+    183:194:java.io.IOException releaseInputStreams(java.io.IOException) -> b
+    198:210:java.io.IOException releaseZipContent(java.io.IOException) -> c
+    214:226:java.io.IOException releaseZipContentForManifest(java.io.IOException) -> d
+    230:234:java.io.IOException addToExceptionChain(java.io.IOException,java.io.IOException) -> a
+    108:108:void lambda$createInflatorCleanupAction$0(java.util.zip.Inflater) -> b
+    2134:2145:void endOrCacheInflater(java.util.zip.Inflater):134:145 -> b
+    2134:2145:void lambda$createInflatorCleanupAction$0(java.util.zip.Inflater):108 -> b
+org.springframework.boot.loader.jar.SecurityInfo -> org.springframework.boot.loader.a.k:
+# {"fileName":"SecurityInfo.java","id":"sourceFile"}
+    org.springframework.boot.loader.jar.SecurityInfo NONE -> a
+    java.security.cert.Certificate[][] certificateLookups -> b
+    java.security.CodeSigner[][] codeSignerLookups -> c
+    42:45:void <init>(java.security.cert.Certificate[][],java.security.CodeSigner[][]) -> <init>
+    48:48:java.security.cert.Certificate[] getCertificates(org.springframework.boot.loader.zip.ZipContent$Entry) -> a
+    52:52:java.security.CodeSigner[] getCodeSigners(org.springframework.boot.loader.zip.ZipContent$Entry) -> b
+    56:56:java.lang.Object[] clone(java.lang.Object[]) -> a
+    65:72:org.springframework.boot.loader.jar.SecurityInfo get(org.springframework.boot.loader.zip.ZipContent) -> a
+    85:106:org.springframework.boot.loader.jar.SecurityInfo load(org.springframework.boot.loader.zip.ZipContent) -> b
+    36:36:void <clinit>() -> <clinit>
+org.springframework.boot.loader.jar.ZipInflaterInputStream -> org.springframework.boot.loader.a.l:
+# {"fileName":"ZipInflaterInputStream.java","id":"sourceFile"}
+    int available -> a
+    boolean extraBytesWritten -> b
+    39:41:void <init>(org.springframework.boot.loader.jar.NestedJarFile$JarEntryInputStream,java.util.zip.Inflater,int) -> <init>
+    1044:1047:int getInflaterBufferSize(long):44:47 -> <init>
+    1044:1047:void <init>(org.springframework.boot.loader.jar.NestedJarFile$JarEntryInputStream,java.util.zip.Inflater,int):39 -> <init>
+    52:52:int available() -> available
+    57:61:int read(byte[],int,int) -> read
+    67:78:void fill() -> fill
+org.springframework.boot.loader.launch.Archive -> org.springframework.boot.loader.launch.a:
+# {"fileName":"Archive.java","id":"sourceFile"}
+    java.util.function.Predicate ALL_ENTRIES -> a
+    java.util.jar.Manifest getManifest() -> a
+    56:56:java.util.Set getClassPathUrls(java.util.function.Predicate) -> a
+    java.util.Set getClassPathUrls(java.util.function.Predicate,java.util.function.Predicate) -> a
+    76:76:boolean isExploded() -> b
+    85:85:java.io.File getRootDirectory() -> c
+    94:94:void close() -> close
+    104:104:org.springframework.boot.loader.launch.Archive create(java.lang.Class) -> a
+    108:114:org.springframework.boot.loader.launch.Archive create(java.security.ProtectionDomain) -> a
+    125:128:org.springframework.boot.loader.launch.Archive create(java.io.File) -> a
+    40:40:boolean lambda$static$0(org.springframework.boot.loader.launch.Archive$Entry) -> a
+    40:40:void <clinit>() -> <clinit>
+org.springframework.boot.loader.launch.Archive$Entry -> org.springframework.boot.loader.launch.b:
+# {"fileName":"Archive.java","id":"sourceFile"}
+    java.lang.String name() -> a
+    boolean isDirectory() -> b
+org.springframework.boot.loader.launch.ClassPathIndexFile -> org.springframework.boot.loader.launch.c:
+# {"fileName":"ClassPathIndexFile.java","id":"sourceFile"}
+    java.io.File root -> a
+    java.util.Set lines -> b
+    41:44:void <init>(java.io.File,java.util.List) -> <init>
+    47:50:java.lang.String extractName(java.lang.String) -> b
+    58:61:boolean containsEntry(java.lang.String) -> a
+    65:65:java.util.List getUrls() -> a
+    70:73:java.net.URL asUrl(java.lang.String) -> c
+    78:78:org.springframework.boot.loader.launch.ClassPathIndexFile loadIfPossible(java.io.File,java.lang.String) -> a
+    1082:1089:org.springframework.boot.loader.launch.ClassPathIndexFile loadIfPossible(java.io.File,java.io.File):82:89 -> a
+    1082:1089:org.springframework.boot.loader.launch.ClassPathIndexFile loadIfPossible(java.io.File,java.lang.String):78 -> a
+    93:93:boolean lineHasText(java.lang.String) -> d
+org.springframework.boot.loader.launch.ExecutableArchiveLauncher -> org.springframework.boot.loader.launch.d:
+# {"fileName":"ExecutableArchiveLauncher.java","id":"sourceFile"}
+    org.springframework.boot.loader.launch.Archive archive -> a
+    org.springframework.boot.loader.launch.ClassPathIndexFile classPathIndex -> b
+    53:54:void <init>() -> <init>
+    56:59:void <init>(org.springframework.boot.loader.launch.Archive) -> <init>
+    1062:1066:org.springframework.boot.loader.launch.ClassPathIndexFile getClassPathIndex(org.springframework.boot.loader.launch.Archive):62:66 -> <init>
+    1062:1066:void <init>(org.springframework.boot.loader.launch.Archive):58 -> <init>
+    1070:1073:java.lang.String getClassPathIndexFileLocation(org.springframework.boot.loader.launch.Archive):70:73 -> <init>
+    1070:1073:org.springframework.boot.loader.launch.ClassPathIndexFile getClassPathIndex(org.springframework.boot.loader.launch.Archive):65 -> <init>
+    1070:1073:void <init>(org.springframework.boot.loader.launch.Archive):58 -> <init>
+    78:82:java.lang.ClassLoader createClassLoader(java.util.Collection) -> a
+    87:87:org.springframework.boot.loader.launch.Archive getArchive() -> a
+    92:97:java.lang.String getMainClass() -> b
+    102:102:java.util.Set getClassPathUrls() -> c
+    106:109:boolean isIncludedOnClassPathAndNotIndexed(org.springframework.boot.loader.launch.Archive$Entry) -> c
+    118:119:boolean isSearchedDirectory(org.springframework.boot.loader.launch.Archive$Entry) -> a
+    boolean isIncludedOnClassPath(org.springframework.boot.loader.launch.Archive$Entry) -> b
+    java.lang.String getEntryPathPrefix() -> d
+org.springframework.boot.loader.launch.ExplodedArchive -> org.springframework.boot.loader.launch.e:
+# {"fileName":"ExplodedArchive.java","id":"sourceFile"}
+    java.lang.Object NO_MANIFEST -> b
+    java.util.Set SKIPPED_NAMES -> c
+    java.util.Comparator entryComparator -> d
+    java.io.File rootDirectory -> e
+    java.lang.String rootUriPath -> f
+    java.lang.Object manifest -> g
+    58:64:void <init>(java.io.File) -> <init>
+    68:73:java.util.jar.Manifest getManifest() -> a
+    77:83:java.lang.Object loadManifest() -> d
+    89:105:java.util.Set getClassPathUrls(java.util.function.Predicate,java.util.function.Predicate) -> a
+    109:114:java.util.List listFiles(java.io.File) -> b
+    119:119:java.io.File getRootDirectory() -> c
+    124:124:java.lang.String toString() -> toString
+    42:46:void <clinit>() -> <clinit>
+org.springframework.boot.loader.launch.ExplodedArchive$FileArchiveEntry -> org.springframework.boot.loader.launch.f:
+# {"fileName":"ExplodedArchive.java","id":"sourceFile"}
+    java.lang.String name -> a
+    java.io.File file -> b
+    130:130:void <init>(java.lang.String,java.io.File) -> <init>
+    134:134:boolean isDirectory() -> b
+    130:130:java.lang.String toString() -> toString
+    130:130:int hashCode() -> hashCode
+    130:130:boolean equals(java.lang.Object) -> equals
+    130:130:java.lang.String name() -> a
+org.springframework.boot.loader.launch.JarFileArchive -> org.springframework.boot.loader.launch.g:
+# {"fileName":"JarFileArchive.java","id":"sourceFile"}
+    java.nio.file.attribute.FileAttribute[] NO_FILE_ATTRIBUTES -> b
+    java.nio.file.attribute.FileAttribute[] DIRECTORY_PERMISSION_ATTRIBUTES -> c
+    java.nio.file.attribute.FileAttribute[] FILE_PERMISSION_ATTRIBUTES -> d
+    java.nio.file.Path TEMP -> e
+    java.io.File file -> f
+    java.util.jar.JarFile jarFile -> g
+    java.nio.file.Path tempUnpackDirectory -> h
+    70:71:void <init>(java.io.File) -> <init>
+    73:76:void <init>(java.io.File,java.util.jar.JarFile) -> <init>
+    80:80:java.util.jar.Manifest getManifest() -> a
+    86:90:java.util.Set getClassPathUrls(java.util.function.Predicate,java.util.function.Predicate) -> a
+    95:103:java.net.URL getNestedJarUrl(org.springframework.boot.loader.launch.JarFileArchive$JarArchiveEntry) -> a
+    1108:1116:java.net.URL getUnpackedNestedJarUrl(java.util.jar.JarEntry):108:116 -> a
+    1108:1116:java.net.URL getNestedJarUrl(org.springframework.boot.loader.launch.JarFileArchive$JarArchiveEntry):98 -> a
+    2051:2051:java.net.URL org.springframework.boot.loader.net.protocol.jar.JarUrl.create(java.io.File,java.util.jar.JarEntry):51:51 -> a
+    2051:2051:java.net.URL getNestedJarUrl(org.springframework.boot.loader.launch.JarFileArchive$JarArchiveEntry):100 -> a
+    2061:2061:java.net.URL org.springframework.boot.loader.net.protocol.jar.JarUrl.create(java.io.File,java.lang.String):61:61 -> a
+    2061:2061:java.net.URL org.springframework.boot.loader.net.protocol.jar.JarUrl.create(java.io.File,java.util.jar.JarEntry):51 -> a
+    2061:2061:java.net.URL getNestedJarUrl(org.springframework.boot.loader.launch.JarFileArchive$JarArchiveEntry):100 -> a
+    120:131:java.nio.file.Path getTempUnpackDirectory() -> d
+    135:147:java.nio.file.Path createUnpackDirectory(java.nio.file.Path) -> a
+    2151:2152:void createDirectory(java.nio.file.Path):151:152 -> a
+    2151:2152:java.nio.file.Path createUnpackDirectory(java.nio.file.Path):140 -> a
+    155:160:void unpack(java.util.jar.JarEntry,java.nio.file.Path) -> a
+    163:164:void createFile(java.nio.file.Path) -> b
+    167:167:java.nio.file.attribute.FileAttribute[] getFileAttributes(java.nio.file.Path,java.nio.file.attribute.FileAttribute[]) -> a
+    171:171:boolean supportsPosix(java.nio.file.FileSystem) -> a
+    176:177:void close() -> close
+    181:181:java.lang.String toString() -> toString
+    185:185:java.nio.file.attribute.FileAttribute[] asFileAttributes(java.nio.file.attribute.PosixFilePermission[]) -> a
+    53:61:void <clinit>() -> <clinit>
+org.springframework.boot.loader.launch.JarFileArchive$JarArchiveEntry -> org.springframework.boot.loader.launch.h:
+# {"fileName":"JarFileArchive.java","id":"sourceFile"}
+    java.util.jar.JarEntry jarEntry -> a
+    191:191:void <init>(java.util.jar.JarEntry) -> <init>
+    195:195:java.lang.String name() -> a
+    200:200:boolean isDirectory() -> b
+    191:191:java.lang.String toString() -> toString
+    191:191:int hashCode() -> hashCode
+    191:191:boolean equals(java.lang.Object) -> equals
+    191:191:java.util.jar.JarEntry jarEntry() -> c
+org.springframework.boot.loader.launch.JarLauncher -> org.springframework.boot.loader.launch.JarLauncher:
+# {"fileName":"JarLauncher.java","id":"sourceFile"}
+    32:33:void <init>() -> <init>
+    41:41:boolean isIncludedOnClassPath(org.springframework.boot.loader.launch.Archive$Entry) -> b
+    46:46:java.lang.String getEntryPathPrefix() -> d
+    50:54:boolean isLibraryFileOrClassesDirectory(org.springframework.boot.loader.launch.Archive$Entry) -> c
+    58:59:void main(java.lang.String[]) -> main
+org.springframework.boot.loader.launch.JarModeRunner -> org.springframework.boot.loader.launch.i:
+# {"fileName":"JarModeRunner.java","id":"sourceFile"}
+    34:35:void <init>() -> <init>
+    32:32:void <clinit>() -> <clinit>
+org.springframework.boot.loader.launch.LaunchedClassLoader -> org.springframework.boot.loader.launch.j:
+# {"fileName":"LaunchedClassLoader.java","id":"sourceFile"}
+    java.lang.String JAR_MODE_RUNNER_CLASS_NAME -> a
+    boolean exploded -> b
+    org.springframework.boot.loader.launch.Archive rootArchive -> c
+    java.lang.Object definePackageLock -> d
+    org.springframework.boot.loader.launch.LaunchedClassLoader$DefinePackageCallType definePackageCallType -> e
+    61:62:void <init>(boolean,java.net.URL[],java.lang.ClassLoader) -> <init>
+    50:75:void <init>(boolean,org.springframework.boot.loader.launch.Archive,java.net.URL[],java.lang.ClassLoader) -> <init>
+    79:91:java.lang.Class loadClass(java.lang.String,boolean) -> loadClass
+    96:110:java.lang.Class loadClassInLaunchedClassLoader(java.lang.String) -> b
+    116:116:java.lang.Package definePackage(java.lang.String,java.util.jar.Manifest,java.net.URL) -> definePackage
+    120:122:java.lang.Package definePackageForExploded(java.lang.String,java.util.jar.Manifest,java.net.URL) -> a
+    128:132:java.lang.Package definePackage(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.net.URL) -> definePackage
+    137:148:java.lang.Package definePackageForExploded(java.lang.String,java.net.URL,java.util.function.Supplier) -> a
+    152:159:java.lang.Object definePackage(org.springframework.boot.loader.launch.LaunchedClassLoader$DefinePackageCallType,java.util.function.Supplier) -> a
+    164:167:java.util.jar.Manifest getManifest(org.springframework.boot.loader.launch.Archive) -> a
+    132:132:java.lang.Package lambda$definePackage$1(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.net.URL) -> a
+    121:121:java.lang.Package lambda$definePackageForExploded$0(java.lang.String,java.util.jar.Manifest,java.net.URL) -> b
+    40:44:void <clinit>() -> <clinit>
+org.springframework.boot.loader.launch.LaunchedClassLoader$DefinePackageCallType -> org.springframework.boot.loader.launch.k:
+# {"fileName":"LaunchedClassLoader.java","id":"sourceFile"}
+    org.springframework.boot.loader.launch.LaunchedClassLoader$DefinePackageCallType MANIFEST -> a
+    org.springframework.boot.loader.launch.LaunchedClassLoader$DefinePackageCallType ATTRIBUTES -> b
+    org.springframework.boot.loader.launch.LaunchedClassLoader$DefinePackageCallType[] $VALUES -> c
+    175:175:org.springframework.boot.loader.launch.LaunchedClassLoader$DefinePackageCallType[] values() -> values
+    175:175:org.springframework.boot.loader.launch.LaunchedClassLoader$DefinePackageCallType valueOf(java.lang.String) -> valueOf
+    175:175:void <init>(java.lang.String,int) -> <init>
+    175:185:void <clinit>() -> <clinit>
+    1175:1175:org.springframework.boot.loader.launch.LaunchedClassLoader$DefinePackageCallType[] $values():175:175 -> <clinit>
+    1175:1175:void <clinit>():175 -> <clinit>
+org.springframework.boot.loader.launch.Launcher -> org.springframework.boot.loader.launch.l:
+# {"fileName":"Launcher.java","id":"sourceFile"}
+    java.lang.String JAR_MODE_RUNNER_CLASS_NAME -> a
+    35:35:void <init>() -> <init>
+    46:58:void launch(java.lang.String[]) -> a
+    1061:1061:boolean hasLength(java.lang.String):61:61 -> a
+    1061:1061:void launch(java.lang.String[]):52 -> a
+    1087:1092:void launch(java.lang.ClassLoader,java.lang.String,java.lang.String[]):87:92 -> a
+    1087:1092:void launch(java.lang.String[]):53 -> a
+    71:71:java.lang.ClassLoader createClassLoader(java.util.Collection) -> a
+    2075:2076:org.springframework.boot.loader.launch.LaunchedClassLoader createClassLoader$58c64f59(java.net.URL[]):75:76 -> a
+    2075:2076:java.lang.ClassLoader createClassLoader(java.util.Collection):71 -> a
+    101:102:boolean isExploded() -> d
+    org.springframework.boot.loader.launch.Archive getArchive() -> a
+    java.lang.String getMainClass() -> b
+    java.util.Set getClassPathUrls() -> c
+    37:37:void <clinit>() -> <clinit>
+org.springframework.boot.loader.launch.PropertiesLauncher -> org.springframework.boot.loader.launch.PropertiesLauncher:
+# {"fileName":"PropertiesLauncher.java","id":"sourceFile"}
+    java.net.URL[] NO_URLS -> a
+    java.util.regex.Pattern WORD_SEPARATOR -> b
+    java.lang.String NESTED_ARCHIVE_SEPARATOR -> c
+    org.springframework.boot.loader.log.DebugLogger debug -> d
+    org.springframework.boot.loader.launch.Archive archive -> e
+    java.io.File homeDirectory -> f
+    java.util.List paths -> g
+    java.util.Properties properties -> h
+    143:144:void <init>() -> <init>
+    140:151:void <init>(org.springframework.boot.loader.launch.Archive) -> <init>
+    1154:1154:java.io.File getHomeDirectory():154:154 -> <init>
+    1154:1154:void <init>(org.springframework.boot.loader.launch.Archive):148 -> <init>
+    1391:1391:java.lang.String getPropertyWithDefault(java.lang.String,java.lang.String):391:391 -> <init>
+    1391:1391:java.io.File getHomeDirectory():154 -> <init>
+    1391:1391:void <init>(org.springframework.boot.loader.launch.Archive):148 -> <init>
+    2158:2182:void initializeProperties():158:182 -> <init>
+    2158:2182:void <init>(org.springframework.boot.loader.launch.Archive):149 -> <init>
+    2383:2383:java.lang.String getProperty(java.lang.String):383:383 -> <init>
+    2383:2383:void initializeProperties():159 -> <init>
+    2383:2383:void <init>(org.springframework.boot.loader.launch.Archive):149 -> <init>
+    3383:3383:java.lang.String getProperty(java.lang.String):383:383 -> <init>
+    3383:3383:void initializeProperties():160 -> <init>
+    3383:3383:void <init>(org.springframework.boot.loader.launch.Archive):149 -> <init>
+    3391:3391:java.lang.String getPropertyWithDefault(java.lang.String,java.lang.String):391:391 -> <init>
+    3391:3391:void initializeProperties():163 -> <init>
+    3391:3391:void <init>(org.springframework.boot.loader.launch.Archive):149 -> <init>
+    4185:4192:java.io.InputStream getResource(java.lang.String):185:192 -> <init>
+    4185:4192:void initializeProperties():172 -> <init>
+    4185:4192:void <init>(org.springframework.boot.loader.launch.Archive):149 -> <init>
+    4196:4199:java.io.InputStream getClasspathResource(java.lang.String):196:199 -> <init>
+    4196:4199:java.io.InputStream getResource(java.lang.String):186 -> <init>
+    4196:4199:void initializeProperties():172 -> <init>
+    4196:4199:void <init>(org.springframework.boot.loader.launch.Archive):149 -> <init>
+    4216:4216:boolean isUrl(java.lang.String):216:216 -> <init>
+    4216:4216:java.io.InputStream getResource(java.lang.String):189 -> <init>
+    4216:4216:void initializeProperties():172 -> <init>
+    4216:4216:void <init>(org.springframework.boot.loader.launch.Archive):149 -> <init>
+    4262:4264:java.io.InputStream getFileResource(java.lang.String):262:264 -> <init>
+    4262:4264:java.io.InputStream getResource(java.lang.String):192 -> <init>
+    4262:4264:void initializeProperties():172 -> <init>
+    4262:4264:void <init>(org.springframework.boot.loader.launch.Archive):149 -> <init>
+    4268:4273:void loadResource(java.io.InputStream):268:273 -> <init>
+    4268:4273:void initializeProperties():178 -> <init>
+    4268:4273:void <init>(org.springframework.boot.loader.launch.Archive):149 -> <init>
+    4276:4283:void resolvePropertyPlaceholders():276:283 -> <init>
+    4276:4283:void loadResource(java.io.InputStream):269 -> <init>
+    4276:4283:void initializeProperties():178 -> <init>
+    4276:4283:void <init>(org.springframework.boot.loader.launch.Archive):149 -> <init>
+    4383:4383:java.lang.String getProperty(java.lang.String):383:383 -> <init>
+    4383:4383:void loadResource(java.io.InputStream):270 -> <init>
+    4383:4383:void initializeProperties():178 -> <init>
+    4383:4383:void <init>(org.springframework.boot.loader.launch.Archive):149 -> <init>
+    5286:5291:void addToSystemProperties():286:291 -> <init>
+    5286:5291:void loadResource(java.io.InputStream):271 -> <init>
+    5286:5291:void initializeProperties():178 -> <init>
+    5286:5291:void <init>(org.springframework.boot.loader.launch.Archive):149 -> <init>
+    203:212:java.lang.String handleUrl(java.lang.String) -> a
+    220:231:java.io.InputStream getURLResource(java.lang.String) -> b
+    235:252:boolean exists(java.net.URL) -> a
+    256:259:void disconnect(java.net.URLConnection) -> a
+    294:297:java.util.List getPaths() -> d
+    5383:5383:java.lang.String getProperty(java.lang.String):383:383 -> d
+    5383:5383:java.util.List getPaths():294 -> d
+    301:311:java.util.List parsePathsProperty(java.lang.String) -> c
+    315:327:java.lang.String cleanupPath(java.lang.String) -> d
+    332:341:java.lang.ClassLoader createClassLoader(java.util.Collection) -> a
+    6383:6383:java.lang.String getProperty(java.lang.String):383:383 -> a
+    6383:6383:java.lang.ClassLoader createClassLoader(java.util.Collection):332 -> a
+    7345:7353:java.lang.ClassLoader wrapWithCustomClassLoader$5f1649f9(org.springframework.boot.loader.launch.LaunchedClassLoader,java.lang.String):345:353 -> a
+    7345:7353:java.lang.ClassLoader createClassLoader(java.util.Collection):339 -> a
+    7587:7587:java.lang.Object org.springframework.boot.loader.launch.PropertiesLauncher$Instantiator.constructWithoutParameters():587:587 -> a
+    7587:7587:java.lang.ClassLoader wrapWithCustomClassLoader$5f1649f9(org.springframework.boot.loader.launch.LaunchedClassLoader,java.lang.String):349 -> a
+    7587:7587:java.lang.ClassLoader createClassLoader(java.util.Collection):339 -> a
+    358:358:org.springframework.boot.loader.launch.Archive getArchive() -> a
+    363:367:java.lang.String getMainClass() -> b
+    8387:8387:java.lang.String getProperty(java.lang.String,java.lang.String):387:387 -> b
+    8387:8387:java.lang.String getMainClass():363 -> b
+    395:423:java.lang.String getProperty(java.lang.String,java.lang.String,java.lang.String) -> a
+    8446:8457:java.lang.String toCamelCase(java.lang.CharSequence):446:457 -> a
+    8446:8457:java.lang.String getProperty(java.lang.String,java.lang.String,java.lang.String):395 -> a
+    427:428:java.lang.String getManifestValue(org.springframework.boot.loader.launch.Archive,java.lang.String) -> a
+    432:435:java.lang.String getResolvedProperty(java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> a
+    461:461:java.lang.String capitalize(java.lang.String) -> e
+    466:473:java.util.Set getClassPathUrls() -> c
+    8541:8542:java.util.Set getClassPathUrlsForRoot():541:542 -> c
+    8541:8542:java.util.Set getClassPathUrls():471 -> c
+    477:497:java.util.Set getClassPathUrlsForPath(java.lang.String) -> f
+    8561:8561:boolean isAbsolutePath(java.lang.String):561:561 -> f
+    8561:8561:java.util.Set getClassPathUrlsForPath(java.lang.String):477 -> f
+    501:537:java.util.Set getClassPathUrlsForNested(java.lang.String) -> g
+    9546:9546:java.util.function.Predicate includeByPrefix(java.lang.String):546:546 -> g
+    9546:9546:java.util.Set getClassPathUrlsForNested(java.lang.String):527 -> g
+    10041:10041:java.net.URL org.springframework.boot.loader.net.protocol.jar.JarUrl.create(java.io.File):41:41 -> g
+    10041:10041:java.util.Set getClassPathUrlsForNested(java.lang.String):529 -> g
+    10061:10061:java.net.URL org.springframework.boot.loader.net.protocol.jar.JarUrl.create(java.io.File,java.lang.String):61:61 -> g
+    10061:10061:java.net.URL org.springframework.boot.loader.net.protocol.jar.JarUrl.create(java.io.File):41 -> g
+    10061:10061:java.util.Set getClassPathUrlsForNested(java.lang.String):529 -> g
+    551:551:boolean isArchive(org.springframework.boot.loader.launch.Archive$Entry) -> a
+    555:556:boolean isArchive(java.lang.String) -> h
+    565:568:java.lang.String stripLeadingSlashes(java.lang.String) -> i
+    572:575:void main(java.lang.String[]) -> main
+    10371:10372:java.lang.String[] getArgs(java.lang.String[]):371:372 -> main
+    10371:10372:void main(java.lang.String[]):573 -> main
+    10383:10383:java.lang.String getProperty(java.lang.String):383:383 -> main
+    10383:10383:java.lang.String[] getArgs(java.lang.String[]):371 -> main
+    10383:10383:void main(java.lang.String[]):573 -> main
+    11376:11379:java.lang.String[] merge(java.lang.String[],java.lang.String[]):376:379 -> main
+    11376:11379:java.lang.String[] getArgs(java.lang.String[]):372 -> main
+    11376:11379:void main(java.lang.String[]):573 -> main
+    546:547:boolean lambda$includeByPrefix$0(java.lang.String,org.springframework.boot.loader.launch.Archive$Entry) -> a
+    124:132:void <clinit>() -> <clinit>
+org.springframework.boot.loader.launch.PropertiesLauncher$Instantiator -> org.springframework.boot.loader.launch.m:
+# {"fileName":"PropertiesLauncher.java","id":"sourceFile"}
+    java.lang.ClassLoader parent -> a
+    java.lang.Class type -> b
+    583:584:void <init>(java.lang.ClassLoader,java.lang.String) -> <init>
+    580:580:void <init>(java.lang.ClassLoader,java.lang.Class) -> <init>
+    591:591:org.springframework.boot.loader.launch.PropertiesLauncher$Instantiator$Using declaredConstructor(java.lang.Class[]) -> a
+    580:580:java.lang.String toString() -> toString
+    580:580:int hashCode() -> hashCode
+    580:580:boolean equals(java.lang.Object) -> equals
+    580:580:java.lang.Class type() -> a
+org.springframework.boot.loader.launch.PropertiesLauncher$Instantiator$Using -> org.springframework.boot.loader.launch.n:
+# {"fileName":"PropertiesLauncher.java","id":"sourceFile"}
+    org.springframework.boot.loader.launch.PropertiesLauncher$Instantiator instantiator -> a
+    java.lang.Class[] parameterTypes -> b
+    594:594:void <init>(org.springframework.boot.loader.launch.PropertiesLauncher$Instantiator,java.lang.Class[]) -> <init>
+    599:604:java.lang.Object newInstance(java.lang.Object[]) -> a
+    594:594:java.lang.String toString() -> toString
+    594:594:int hashCode() -> hashCode
+    594:594:boolean equals(java.lang.Object) -> equals
+org.springframework.boot.loader.launch.SystemPropertyUtils -> org.springframework.boot.loader.launch.o:
+# {"fileName":"SystemPropertyUtils.java","id":"sourceFile"}
+    java.lang.String SIMPLE_PREFIX -> a
+    47:47:java.lang.String resolvePlaceholders(java.util.Properties,java.lang.String) -> a
+    52:87:java.lang.String parseStringValue(java.util.Properties,java.lang.String,java.lang.String,java.util.Set) -> a
+    91:95:java.lang.String resolvePlaceholder(java.util.Properties,java.lang.String,java.lang.String) -> a
+    99:99:java.lang.String getProperty(java.lang.String) -> a
+    104:113:java.lang.String getProperty(java.lang.String,java.lang.String,java.lang.String) -> a
+    118:138:int findPlaceholderEndIndex(java.lang.CharSequence,int) -> a
+    142:148:boolean substringMatch(java.lang.CharSequence,int,java.lang.CharSequence) -> a
+    41:41:void <clinit>() -> <clinit>
+org.springframework.boot.loader.launch.WarLauncher -> org.springframework.boot.loader.launch.WarLauncher:
+# {"fileName":"WarLauncher.java","id":"sourceFile"}
+    31:32:void <init>() -> <init>
+    40:40:boolean isIncludedOnClassPath(org.springframework.boot.loader.launch.Archive$Entry) -> b
+    1049:1053:boolean isLibraryFileOrClassesDirectory(org.springframework.boot.loader.launch.Archive$Entry):49:53 -> b
+    1049:1053:boolean isIncludedOnClassPath(org.springframework.boot.loader.launch.Archive$Entry):40 -> b
+    45:45:java.lang.String getEntryPathPrefix() -> d
+    57:58:void main(java.lang.String[]) -> main
+org.springframework.boot.loader.log.DebugLogger -> org.springframework.boot.loader.b.a:
+# {"fileName":"DebugLogger.java","id":"sourceFile"}
+    org.springframework.boot.loader.log.DebugLogger$DisabledDebugLogger disabled$15b61297 -> a
+    25:25:void <init>() -> <init>
+    void log(java.lang.String) -> a
+    void log(java.lang.String,java.lang.Object) -> a
+    void log(java.lang.String,java.lang.Object,java.lang.Object) -> a
+    void log(java.lang.String,java.lang.Object,java.lang.Object,java.lang.Object) -> a
+    void log(java.lang.String,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object) -> a
+    80:80:org.springframework.boot.loader.log.DebugLogger get(java.lang.Class) -> a
+    31:32:void <clinit>() -> <clinit>
+org.springframework.boot.loader.log.DebugLogger$DisabledDebugLogger -> org.springframework.boot.loader.b.b:
+# {"fileName":"DebugLogger.java","id":"sourceFile"}
+    86:86:void <init>() -> <init>
+    90:90:void log(java.lang.String) -> a
+    94:94:void log(java.lang.String,java.lang.Object) -> a
+    98:98:void log(java.lang.String,java.lang.Object,java.lang.Object) -> a
+    102:102:void log(java.lang.String,java.lang.Object,java.lang.Object,java.lang.Object) -> a
+    106:106:void log(java.lang.String,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object) -> a
+org.springframework.boot.loader.log.DebugLogger$SystemErrDebugLogger -> org.springframework.boot.loader.b.c:
+# {"fileName":"DebugLogger.java","id":"sourceFile"}
+    java.lang.String prefix -> a
+    117:119:void <init>(java.lang.Class) -> <init>
+    123:124:void log(java.lang.String) -> a
+    128:129:void log(java.lang.String,java.lang.Object) -> a
+    133:134:void log(java.lang.String,java.lang.Object,java.lang.Object) -> a
+    138:139:void log(java.lang.String,java.lang.Object,java.lang.Object,java.lang.Object) -> a
+    143:144:void log(java.lang.String,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object) -> a
+    147:148:void print(java.lang.String) -> b
+org.springframework.boot.loader.net.protocol.Handlers -> org.springframework.boot.loader.c.a.a:
+# {"fileName":"Handlers.java","id":"sourceFile"}
+    java.lang.String PACKAGE -> a
+    35:36:void <init>() -> <init>
+    43:47:void register() -> a
+    1056:1061:void resetCachedUrlHandlers():56:61 -> a
+    1056:1061:void register():46 -> a
+    33:33:void <clinit>() -> <clinit>
+org.springframework.boot.loader.net.protocol.jar.Canonicalizer -> org.springframework.boot.loader.c.a.a.a:
+# {"fileName":"Canonicalizer.java","id":"sourceFile"}
+    32:39:java.lang.String canonicalizeAfter(java.lang.String,int) -> a
+    1043:1047:java.lang.String canonicalize(java.lang.String):43:47 -> a
+    1043:1047:java.lang.String canonicalizeAfter(java.lang.String,int):39 -> a
+    1052:1057:java.lang.String removeEmbeddedSlashDotDotSlash(java.lang.String):52:57 -> a
+    1052:1057:java.lang.String canonicalize(java.lang.String):43 -> a
+    1052:1057:java.lang.String canonicalizeAfter(java.lang.String,int):39 -> a
+    1062:1067:java.lang.String removeEmbeddedSlashDotSlash(java.lang.String):62:67 -> a
+    1062:1067:java.lang.String canonicalize(java.lang.String):44 -> a
+    1062:1067:java.lang.String canonicalizeAfter(java.lang.String,int):39 -> a
+    1076:1081:java.lang.String removeTrailingSlashDotDot(java.lang.String):76:81 -> a
+    1076:1081:java.lang.String canonicalize(java.lang.String):45 -> a
+    1076:1081:java.lang.String canonicalizeAfter(java.lang.String,int):39 -> a
+    2071:2071:java.lang.String removeTrailingSlashDot(java.lang.String):71:71 -> a
+    2071:2071:java.lang.String canonicalize(java.lang.String):46 -> a
+    2071:2071:java.lang.String canonicalizeAfter(java.lang.String,int):39 -> a
+org.springframework.boot.loader.net.protocol.jar.Handler -> org.springframework.boot.loader.c.a.a.b:
+# {"fileName":"Handler.java","id":"sourceFile"}
+    org.springframework.boot.loader.net.protocol.jar.Handler INSTANCE -> a
+    33:33:void <init>() -> <init>
+    46:46:java.net.URLConnection openConnection(java.net.URL) -> openConnection
+    51:58:void parseURL(java.net.URL,java.lang.String,int,int) -> parseURL
+    1061:1067:java.lang.String extractPath(java.net.URL,java.lang.String,int,int,int):61:67 -> parseURL
+    1061:1067:void parseURL(java.net.URL,java.lang.String,int,int):55 -> parseURL
+    1071:1071:java.lang.String extractAnchorOnlyPath(java.net.URL):71:71 -> parseURL
+    1071:1071:java.lang.String extractPath(java.net.URL,java.lang.String,int,int,int):62 -> parseURL
+    1071:1071:void parseURL(java.net.URL,java.lang.String,int,int):55 -> parseURL
+    1075:1081:java.lang.String extractAbsolutePath(java.lang.String,int,int):75:81 -> parseURL
+    1075:1081:java.lang.String extractPath(java.net.URL,java.lang.String,int,int,int):65 -> parseURL
+    1075:1081:void parseURL(java.net.URL,java.lang.String,int,int):55 -> parseURL
+    1085:1087:java.lang.String extractRelativePath(java.net.URL,java.lang.String,int,int):85:87 -> parseURL
+    1085:1087:java.lang.String extractPath(java.net.URL,java.lang.String,int,int,int):67 -> parseURL
+    1085:1087:void parseURL(java.net.URL,java.lang.String,int,int):55 -> parseURL
+    1091:1103:java.lang.String extractContextPath(java.net.URL,java.lang.String,int):91:103 -> parseURL
+    1091:1103:java.lang.String extractRelativePath(java.net.URL,java.lang.String,int,int):85 -> parseURL
+    1091:1103:java.lang.String extractPath(java.net.URL,java.lang.String,int,int,int):67 -> parseURL
+    1091:1103:void parseURL(java.net.URL,java.lang.String,int,int):55 -> parseURL
+    107:117:void assertInnerUrlIsNotMalformed(java.lang.String,java.lang.String) -> a
+    121:136:int hashCode(java.net.URL) -> hashCode
+    141:166:boolean sameFile(java.net.URL,java.net.URL) -> sameFile
+    170:170:int indexOfSeparator(java.lang.String) -> a
+    174:179:int indexOfSeparator(java.lang.String,int,int) -> a
+    42:42:void <clinit>() -> <clinit>
+org.springframework.boot.loader.net.protocol.jar.JarFileUrlKey -> org.springframework.boot.loader.c.a.a.c:
+# {"fileName":"JarFileUrlKey.java","id":"sourceFile"}
+    java.lang.ref.SoftReference cache -> a
+    43:48:java.lang.String get(java.net.URL) -> a
+    52:67:java.lang.String create(java.net.URL) -> b
+org.springframework.boot.loader.net.protocol.jar.JarUrl -> org.springframework.boot.loader.c.a.a.d:
+# {"fileName":"JarUrl.java","id":"sourceFile"}
+    73:77:java.net.URL create(java.io.File,java.lang.String,java.lang.String) -> a
+    1082:1083:java.lang.String getJarReference(java.io.File,java.lang.String):82:83 -> a
+    1082:1083:java.net.URL create(java.io.File,java.lang.String,java.lang.String):74 -> a
+org.springframework.boot.loader.net.protocol.jar.JarUrlClassLoader -> org.springframework.boot.loader.c.a.a.e:
+# {"fileName":"JarUrlClassLoader.java","id":"sourceFile"}
+    java.net.URL[] urls -> a
+    boolean hasJarUrls -> b
+    java.util.Map jarFiles -> c
+    java.util.Set undefinablePackages -> d
+    48:61:void <init>(java.net.URL[],java.lang.ClassLoader) -> <init>
+    65:74:java.net.URL findResource(java.lang.String) -> findResource
+    79:88:java.util.Enumeration findResources(java.lang.String) -> findResources
+    93:108:java.lang.Class loadClass(java.lang.String,boolean) -> loadClass
+    118:133:void definePackageIfNecessary(java.lang.String) -> a
+    136:157:void definePackage(java.lang.String,java.lang.String) -> a
+    161:168:void tolerateRaceConditionDueToBeingParallelCapable(java.lang.IllegalArgumentException,java.lang.String) -> a
+    171:172:boolean hasEntry(java.util.jar.JarFile,java.lang.String) -> a
+    176:193:java.util.jar.JarFile getJarFile(java.net.URL) -> a
+    236:236:boolean isJarUrl(java.net.URL) -> b
+    241:243:void close() -> close
+    1246:1252:void clearJarFiles():246:252 -> close
+    1246:1252:void close():242 -> close
+org.springframework.boot.loader.net.protocol.jar.JarUrlClassLoader$OptimizedEnumeration -> org.springframework.boot.loader.c.a.a.f:
+# {"fileName":"JarUrlClassLoader.java","id":"sourceFile"}
+    java.util.Enumeration delegate -> a
+    261:263:void <init>(java.util.Enumeration) -> <init>
+    267:273:boolean hasMoreElements() -> hasMoreElements
+    279:285:java.net.URL nextElement() -> a
+    257:257:java.lang.Object nextElement() -> nextElement
+org.springframework.boot.loader.net.protocol.jar.JarUrlConnection -> org.springframework.boot.loader.c.a.a.g:
+# {"fileName":"JarUrlConnection.java","id":"sourceFile"}
+    org.springframework.boot.loader.net.protocol.jar.UrlJarFiles jarFiles -> a
+    java.io.InputStream emptyInputStream -> b
+    java.io.FileNotFoundException FILE_NOT_FOUND_EXCEPTION -> c
+    java.net.URL NOT_FOUND_URL -> d
+    org.springframework.boot.loader.net.protocol.jar.JarUrlConnection NOT_FOUND_CONNECTION -> e
+    java.lang.String entryName -> f
+    java.util.function.Supplier notFound -> g
+    java.util.jar.JarFile jarFile -> h
+    java.net.URLConnection jarFileConnection -> i
+    java.util.jar.JarEntry jarEntry -> j
+    java.lang.String contentType -> k
+    84:89:void <init>(java.net.URL) -> <init>
+    92:95:void <init>(java.util.function.Supplier) -> <init>
+    99:100:java.util.jar.JarFile getJarFile() -> getJarFile
+    105:106:java.util.jar.JarEntry getJarEntry() -> getJarEntry
+    111:112:int getContentLength() -> getContentLength
+    118:122:long getContentLengthLong() -> getContentLengthLong
+    128:131:java.lang.String getContentType() -> getContentType
+    1135:1138:java.lang.String deduceContentType():135:138 -> getContentType
+    1135:1138:java.lang.String getContentType():129 -> getContentType
+    1154:1154:java.lang.String deduceContentTypeFromEntryName():154:154 -> getContentType
+    1154:1154:java.lang.String deduceContentType():137 -> getContentType
+    1154:1154:java.lang.String getContentType():129 -> getContentType
+    143:149:java.lang.String deduceContentTypeFromStream() -> a
+    159:159:long getLastModified() -> getLastModified
+    164:164:java.lang.String getHeaderField(java.lang.String) -> getHeaderField
+    169:170:java.lang.Object getContent() -> getContent
+    175:175:java.security.Permission getPermission() -> getPermission
+    180:205:java.io.InputStream getInputStream() -> getInputStream
+    210:210:boolean getAllowUserInteraction() -> getAllowUserInteraction
+    215:218:void setAllowUserInteraction(boolean) -> setAllowUserInteraction
+    222:222:boolean getUseCaches() -> getUseCaches
+    227:230:void setUseCaches(boolean) -> setUseCaches
+    234:234:boolean getDefaultUseCaches() -> getDefaultUseCaches
+    239:242:void setDefaultUseCaches(boolean) -> setDefaultUseCaches
+    246:249:void setIfModifiedSince(long) -> setIfModifiedSince
+    253:253:java.lang.String getRequestProperty(java.lang.String) -> getRequestProperty
+    258:261:void setRequestProperty(java.lang.String,java.lang.String) -> setRequestProperty
+    265:268:void addRequestProperty(java.lang.String,java.lang.String) -> addRequestProperty
+    272:273:java.util.Map getRequestProperties() -> getRequestProperties
+    278:296:void connect() -> connect
+    1306:1310:void assertCachedJarFileHasEntry(java.net.URL,java.lang.String):306:310 -> connect
+    1306:1310:void connect():287 -> connect
+    1313:1321:java.util.jar.JarEntry getJarEntry(java.net.URL):313:321 -> connect
+    1313:1321:void connect():290 -> connect
+    2106:2110:void org.springframework.boot.loader.net.protocol.jar.UrlJarFiles.closeIfNotCached(java.net.URL,java.util.jar.JarFile):106:110 -> connect
+    2106:2110:java.util.jar.JarEntry getJarEntry(java.net.URL):318 -> connect
+    2106:2110:void connect():290 -> connect
+    325:331:void throwFileNotFound() -> b
+    335:352:org.springframework.boot.loader.net.protocol.jar.JarUrlConnection open(java.net.URL) -> a
+    2356:2357:boolean hasEntry(java.util.jar.JarFile,java.lang.String):356:357 -> a
+    2356:2357:org.springframework.boot.loader.net.protocol.jar.JarUrlConnection open(java.net.URL):347 -> a
+    2361:2364:org.springframework.boot.loader.net.protocol.jar.JarUrlConnection notFoundConnection(java.lang.String,java.lang.String):361:364 -> a
+    2361:2364:org.springframework.boot.loader.net.protocol.jar.JarUrlConnection open(java.net.URL):348 -> a
+    365:365:java.io.FileNotFoundException lambda$notFoundConnection$1(java.lang.String,java.lang.String) -> a
+    64:64:java.io.FileNotFoundException lambda$static$0() -> c
+    51:69:void <clinit>() -> <clinit>
+org.springframework.boot.loader.net.protocol.jar.JarUrlConnection$ConnectionInputStream -> org.springframework.boot.loader.c.a.a.h:
+# {"fileName":"JarUrlConnection.java","id":"sourceFile"}
+    org.springframework.boot.loader.net.protocol.jar.JarUrlConnection this$0 -> a
+    377:377:void <init>(org.springframework.boot.loader.net.protocol.jar.JarUrlConnection) -> <init>
+    382:389:void close() -> close
+    393:393:java.io.InputStream getDelegateInputStream() -> a
+org.springframework.boot.loader.net.protocol.jar.JarUrlConnection$EmptyUrlStreamHandler -> org.springframework.boot.loader.c.a.a.i:
+# {"fileName":"JarUrlConnection.java","id":"sourceFile"}
+    402:402:void <init>() -> <init>
+    406:406:java.net.URLConnection openConnection(java.net.URL) -> openConnection
+org.springframework.boot.loader.net.protocol.jar.LazyDelegatingInputStream -> org.springframework.boot.loader.c.a.a.j:
+# {"fileName":"LazyDelegatingInputStream.java","id":"sourceFile"}
+    java.io.InputStream in -> a
+    27:27:void <init>() -> <init>
+    33:33:int read() -> read
+    38:38:int read(byte[]) -> read
+    43:43:int read(byte[],int,int) -> read
+    48:48:long skip(long) -> skip
+    53:53:int available() -> available
+    59:62:boolean markSupported() -> markSupported
+    69:74:void mark(int) -> mark
+    78:79:void reset() -> reset
+    82:92:java.io.InputStream in() -> b
+    97:106:void close() -> close
+    java.io.InputStream getDelegateInputStream() -> a
+org.springframework.boot.loader.net.protocol.jar.Optimizations -> org.springframework.boot.loader.c.a.a.k:
+# {"fileName":"Optimizations.java","id":"sourceFile"}
+    java.lang.ThreadLocal status -> a
+    32:33:void enable(boolean) -> a
+    36:37:void disable() -> a
+    40:40:boolean isEnabled() -> b
+    44:44:boolean isEnabled(boolean) -> b
+    26:26:void <clinit>() -> <clinit>
+org.springframework.boot.loader.net.protocol.jar.UrlJarEntry -> org.springframework.boot.loader.c.a.a.l:
+# {"fileName":"UrlJarEntry.java","id":"sourceFile"}
+    org.springframework.boot.loader.net.protocol.jar.UrlJarManifest manifest -> a
+    34:36:void <init>(java.util.jar.JarEntry,org.springframework.boot.loader.net.protocol.jar.UrlJarManifest) -> <init>
+    40:40:java.util.jar.Attributes getAttributes() -> getAttributes
+    44:44:org.springframework.boot.loader.net.protocol.jar.UrlJarEntry of(java.util.zip.ZipEntry,org.springframework.boot.loader.net.protocol.jar.UrlJarManifest) -> a
+org.springframework.boot.loader.net.protocol.jar.UrlJarFile -> org.springframework.boot.loader.c.a.a.m:
+# {"fileName":"UrlJarFile.java","id":"sourceFile"}
+    org.springframework.boot.loader.net.protocol.jar.UrlJarManifest manifest -> a
+    java.util.function.Consumer closeAction -> b
+    41:46:void <init>(java.io.File,java.lang.Runtime$Version,java.util.function.Consumer) -> <init>
+    50:50:java.util.zip.ZipEntry getEntry(java.lang.String) -> getEntry
+    55:55:java.util.jar.Manifest getManifest() -> getManifest
+    60:64:void close() -> close
+    44:44:java.util.jar.Manifest lambda$new$0() -> a
+org.springframework.boot.loader.net.protocol.jar.UrlJarFileFactory -> org.springframework.boot.loader.c.a.a.n:
+# {"fileName":"UrlJarFileFactory.java","id":"sourceFile"}
+    40:40:void <init>() -> <init>
+    50:57:java.util.jar.JarFile createJarFile(java.net.URL,java.util.function.Consumer) -> a
+    1066:1066:java.lang.Runtime$Version getVersion(java.net.URL):66:66 -> a
+    1066:1066:java.util.jar.JarFile createJarFile(java.net.URL,java.util.function.Consumer):50 -> a
+    1070:1070:boolean isLocalFileUrl(java.net.URL):70:70 -> a
+    1070:1070:java.util.jar.JarFile createJarFile(java.net.URL,java.util.function.Consumer):51 -> a
+    1074:1074:boolean isLocal(java.lang.String):74:74 -> a
+    1074:1074:boolean isLocalFileUrl(java.net.URL):70 -> a
+    1074:1074:java.util.jar.JarFile createJarFile(java.net.URL,java.util.function.Consumer):51 -> a
+    1079:1080:org.springframework.boot.loader.net.protocol.jar.UrlJarFile createJarFileForLocalFile$5902c6ad(java.net.URL,java.lang.Runtime$Version,java.util.function.Consumer):79:80 -> a
+    1079:1080:java.util.jar.JarFile createJarFile(java.net.URL,java.util.function.Consumer):52 -> a
+    1085:1086:org.springframework.boot.loader.net.protocol.jar.UrlNestedJarFile createJarFileForNested$5902c6ad(java.net.URL,java.lang.Runtime$Version,java.util.function.Consumer):85:86 -> a
+    1085:1086:java.util.jar.JarFile createJarFile(java.net.URL,java.util.function.Consumer):55 -> a
+    90:92:java.util.jar.JarFile createJarFileForStream(java.net.URL,java.lang.Runtime$Version,java.util.function.Consumer) -> a
+    97:106:org.springframework.boot.loader.net.protocol.jar.UrlJarFile createJarFileForStream$288674c9(java.io.InputStream,java.lang.Runtime$Version,java.util.function.Consumer) -> a
+    1112:1117:void deleteIfPossible(java.nio.file.Path,java.lang.Throwable):112:117 -> a
+    1112:1117:org.springframework.boot.loader.net.protocol.jar.UrlJarFile createJarFileForStream$288674c9(java.io.InputStream,java.lang.Runtime$Version,java.util.function.Consumer):105 -> a
+    120:120:boolean isNestedUrl(java.net.URL) -> a
+org.springframework.boot.loader.net.protocol.jar.UrlJarFiles -> org.springframework.boot.loader.c.a.a.o:
+# {"fileName":"UrlJarFiles.java","id":"sourceFile"}
+    org.springframework.boot.loader.net.protocol.jar.UrlJarFileFactory factory -> a
+    org.springframework.boot.loader.net.protocol.jar.UrlJarFiles$Cache cache -> b
+    45:46:void <init>() -> <init>
+    39:54:void <init>(org.springframework.boot.loader.net.protocol.jar.UrlJarFileFactory) -> <init>
+    66:72:java.util.jar.JarFile getOrCreate(boolean,java.net.URL) -> a
+    81:81:java.util.jar.JarFile getCached(java.net.URL) -> a
+    93:96:boolean cacheIfAbsent(boolean,java.net.URL,java.util.jar.JarFile) -> a
+    121:126:java.net.URLConnection reconnect(java.util.jar.JarFile,java.net.URLConnection) -> a
+    1130:1131:java.net.URLConnection openConnection(java.util.jar.JarFile):130:131 -> a
+    1130:1131:java.net.URLConnection reconnect(java.util.jar.JarFile,java.net.URLConnection):122 -> a
+    135:136:void onClose(java.util.jar.JarFile) -> a
+org.springframework.boot.loader.net.protocol.jar.UrlJarFiles$Cache -> org.springframework.boot.loader.c.a.a.p:
+# {"fileName":"UrlJarFiles.java","id":"sourceFile"}
+    java.util.Map jarFileUrlToJarFile -> a
+    java.util.Map jarFileToJarFileUrl -> b
+    145:149:void <init>() -> <init>
+    157:160:java.util.jar.JarFile get(java.net.URL) -> a
+    169:171:java.net.URL get(java.util.jar.JarFile) -> a
+    183:192:boolean putIfAbsent(java.net.URL,java.util.jar.JarFile) -> a
+    200:206:void remove(java.util.jar.JarFile) -> b
+org.springframework.boot.loader.net.protocol.jar.UrlJarManifest -> org.springframework.boot.loader.c.a.a.q:
+# {"fileName":"UrlJarManifest.java","id":"sourceFile"}
+    java.lang.Object NONE -> a
+    org.springframework.boot.loader.net.protocol.jar.UrlJarManifest$ManifestSupplier supplier -> b
+    java.lang.Object supplied -> c
+    39:41:void <init>(org.springframework.boot.loader.net.protocol.jar.UrlJarManifest$ManifestSupplier) -> <init>
+    44:51:java.util.jar.Manifest get() -> a
+    55:60:java.util.jar.Attributes getEntryAttributes$3c4222ff(org.springframework.boot.loader.net.protocol.jar.UrlJarEntry) -> a
+    64:64:java.util.jar.Attributes cloneAttributes(java.util.jar.Attributes) -> a
+    68:73:java.util.jar.Manifest supply() -> b
+    50:50:void lambda$get$0(java.util.jar.Manifest,java.lang.String,java.util.jar.Attributes) -> a
+    33:33:void <clinit>() -> <clinit>
+org.springframework.boot.loader.net.protocol.jar.UrlJarManifest$ManifestSupplier -> org.springframework.boot.loader.c.a.a.r:
+# {"fileName":"UrlJarManifest.java","id":"sourceFile"}
+    java.util.jar.Manifest getManifest() -> getManifest
+org.springframework.boot.loader.net.protocol.jar.UrlNestedJarFile -> org.springframework.boot.loader.c.a.a.s:
+# {"fileName":"UrlNestedJarFile.java","id":"sourceFile"}
+    org.springframework.boot.loader.net.protocol.jar.UrlJarManifest manifest -> b
+    java.util.function.Consumer closeAction -> c
+    42:45:void <init>(java.io.File,java.lang.String,java.lang.Runtime$Version,java.util.function.Consumer) -> <init>
+    49:49:java.util.jar.Manifest getManifest() -> getManifest
+    54:54:java.util.jar.JarEntry getEntry(java.lang.String) -> a
+    59:63:void close() -> close
+    34:34:java.util.zip.ZipEntry getEntry(java.lang.String) -> getEntry
+    43:43:java.util.jar.Manifest lambda$new$0() -> b
+org.springframework.boot.loader.net.protocol.nested.Handler -> org.springframework.boot.loader.c.a.b.a:
+# {"fileName":"Handler.java","id":"sourceFile"}
+    40:40:java.net.URLConnection openConnection(java.net.URL) -> openConnection
+    48:52:void assertUrlIsNotMalformed(java.lang.String) -> a
+org.springframework.boot.loader.net.protocol.nested.NestedLocation -> org.springframework.boot.loader.c.a.b.b:
+# {"fileName":"NestedLocation.java","id":"sourceFile"}
+    java.nio.file.Path path -> a
+    java.lang.String nestedEntryName -> b
+    java.util.Map cache -> c
+    58:64:void <init>(java.nio.file.Path,java.lang.String) -> <init>
+    73:76:org.springframework.boot.loader.net.protocol.nested.NestedLocation fromUrl(java.net.URL) -> a
+    93:97:org.springframework.boot.loader.net.protocol.nested.NestedLocation parse(java.lang.String) -> a
+    54:54:java.lang.String toString() -> toString
+    54:54:int hashCode() -> hashCode
+    54:54:boolean equals(java.lang.Object) -> equals
+    54:54:java.nio.file.Path path() -> a
+    54:54:java.lang.String nestedEntryName() -> b
+    97:97:org.springframework.boot.loader.net.protocol.nested.NestedLocation lambda$parse$0(int,java.lang.String) -> a
+    1101:1108:org.springframework.boot.loader.net.protocol.nested.NestedLocation create(int,java.lang.String):101:108 -> a
+    1101:1108:org.springframework.boot.loader.net.protocol.nested.NestedLocation lambda$parse$0(int,java.lang.String):97 -> a
+    1112:1112:boolean isWindows():112:112 -> a
+    1112:1112:org.springframework.boot.loader.net.protocol.nested.NestedLocation create(int,java.lang.String):102 -> a
+    1112:1112:org.springframework.boot.loader.net.protocol.nested.NestedLocation lambda$parse$0(int,java.lang.String):97 -> a
+    1116:1116:boolean isUncPath(java.lang.String):116:116 -> a
+    1116:1116:org.springframework.boot.loader.net.protocol.nested.NestedLocation create(int,java.lang.String):102 -> a
+    1116:1116:org.springframework.boot.loader.net.protocol.nested.NestedLocation lambda$parse$0(int,java.lang.String):97 -> a
+    56:56:void <clinit>() -> <clinit>
+org.springframework.boot.loader.net.protocol.nested.NestedUrlConnection -> org.springframework.boot.loader.c.a.b.c:
+# {"fileName":"NestedUrlConnection.java","id":"sourceFile"}
+    java.time.format.DateTimeFormatter RFC_1123_DATE_TIME -> a
+    org.springframework.boot.loader.net.protocol.nested.NestedUrlConnectionResources resources -> b
+    java.lang.ref.Cleaner$Cleanable cleanup -> c
+    long lastModified -> d
+    java.io.FilePermission permission -> e
+    java.util.Map headerFields -> f
+    68:69:void <init>(java.net.URL) -> <init>
+    61:76:void <init>(java.net.URL,org.springframework.boot.loader.ref.Cleaner) -> <init>
+    80:83:org.springframework.boot.loader.net.protocol.nested.NestedLocation parseNestedLocation(java.net.URL) -> a
+    89:90:java.lang.String getHeaderField(java.lang.String) -> getHeaderField
+    95:97:java.lang.String getHeaderField(int) -> getHeaderField
+    102:103:java.lang.String getHeaderFieldKey(int) -> getHeaderFieldKey
+    107:112:java.util.Map$Entry getHeaderEntry(int) -> a
+    118:138:java.util.Map getHeaderFields() -> getHeaderFields
+    143:144:int getContentLength() -> getContentLength
+    150:154:long getContentLengthLong() -> getContentLengthLong
+    160:160:java.lang.String getContentType() -> getContentType
+    165:173:long getLastModified() -> getLastModified
+    178:182:java.security.Permission getPermission() -> getPermission
+    187:188:java.io.InputStream getInputStream() -> getInputStream
+    193:198:void connect() -> connect
+    52:53:void <clinit>() -> <clinit>
+org.springframework.boot.loader.net.protocol.nested.NestedUrlConnection$ConnectionInputStream -> org.springframework.boot.loader.c.a.b.d:
+# {"fileName":"NestedUrlConnection.java","id":"sourceFile"}
+    boolean closing -> a
+    org.springframework.boot.loader.net.protocol.nested.NestedUrlConnection this$0 -> b
+    207:209:void <init>(org.springframework.boot.loader.net.protocol.nested.NestedUrlConnection,java.io.InputStream) -> <init>
+    213:228:void close() -> close
+org.springframework.boot.loader.net.protocol.nested.NestedUrlConnectionResources -> org.springframework.boot.loader.c.a.b.e:
+# {"fileName":"NestedUrlConnectionResources.java","id":"sourceFile"}
+    org.springframework.boot.loader.net.protocol.nested.NestedLocation location -> a
+    org.springframework.boot.loader.zip.ZipContent zipContent -> b
+    long size -> c
+    java.io.InputStream inputStream -> d
+    39:45:void <init>(org.springframework.boot.loader.net.protocol.nested.NestedLocation) -> <init>
+    48:48:org.springframework.boot.loader.net.protocol.nested.NestedLocation getLocation() -> a
+    52:65:void connect() -> b
+    1068:1076:void connectData():68:76 -> b
+    1068:1076:void connect():56 -> b
+    79:84:java.io.InputStream getInputStream() -> c
+    88:88:long getContentLength() -> d
+    93:94:void run() -> run
+    1097:1118:void releaseAll():97:118 -> run
+    1097:1118:void run():93 -> run
+    121:125:java.io.IOException addToExceptionChain(java.io.IOException,java.io.IOException) -> a
+org.springframework.boot.loader.net.util.UrlDecoder -> org.springframework.boot.loader.c.b.a:
+# {"fileName":"UrlDecoder.java","id":"sourceFile"}
+    45:71:java.lang.String decode(java.lang.String) -> a
+    1075:1084:int fillByteBuffer(java.nio.ByteBuffer,java.lang.String,int,int):75:84 -> a
+    1075:1084:java.lang.String decode(java.lang.String):66 -> a
+    1097:1101:void decodeToCharBuffer(java.nio.ByteBuffer,java.nio.CharBuffer,java.nio.charset.CharsetDecoder):97:101 -> a
+    1097:1101:java.lang.String decode(java.lang.String):67 -> a
+    89:92:byte unescape(java.lang.String,int) -> a
+    104:107:void assertNoError(java.nio.charset.CoderResult) -> a
+org.springframework.boot.loader.ref.Cleaner -> org.springframework.boot.loader.d.a:
+# {"fileName":"Cleaner.java","id":"sourceFile"}
+    org.springframework.boot.loader.ref.DefaultCleaner instance$1544f515 -> a
+    java.lang.ref.Cleaner$Cleanable register(java.lang.Object,java.lang.Runnable) -> a
+    33:33:void <clinit>() -> <clinit>
+org.springframework.boot.loader.ref.DefaultCleaner -> org.springframework.boot.loader.d.b:
+# {"fileName":"DefaultCleaner.java","id":"sourceFile"}
+    org.springframework.boot.loader.ref.DefaultCleaner instance -> b
+    java.lang.ref.Cleaner cleaner -> c
+    27:33:void <init>() -> <init>
+    37:41:java.lang.ref.Cleaner$Cleanable register(java.lang.Object,java.lang.Runnable) -> a
+    29:29:void <clinit>() -> <clinit>
+org.springframework.boot.loader.zip.ByteArrayDataBlock -> org.springframework.boot.loader.e.a:
+# {"fileName":"ByteArrayDataBlock.java","id":"sourceFile"}
+    byte[] bytes -> a
+    int maxReadSize -> b
+    38:39:void <init>(byte[]) -> <init>
+    41:44:void <init>(byte[],int) -> <init>
+    48:48:long size() -> a
+    53:53:int read(java.nio.ByteBuffer,long) -> a
+    1057:1063:int read(java.nio.ByteBuffer,int):57:63 -> a
+    1057:1063:int read(java.nio.ByteBuffer,long):53 -> a
+    68:68:void close() -> close
+org.springframework.boot.loader.zip.CloseableDataBlock -> org.springframework.boot.loader.e.b:
+# {"fileName":"CloseableDataBlock.java","id":"sourceFile"}
+org.springframework.boot.loader.zip.DataBlock -> org.springframework.boot.loader.e.c:
+# {"fileName":"DataBlock.java","id":"sourceFile"}
+    long size() -> a
+    int read(java.nio.ByteBuffer,long) -> a
+    64:71:void readFully(java.nio.ByteBuffer,long) -> b
+    79:79:org.springframework.boot.loader.zip.DataBlockInputStream asInputStream$4ad57608() -> b
+org.springframework.boot.loader.zip.DataBlockInputStream -> org.springframework.boot.loader.e.d:
+# {"fileName":"DataBlockInputStream.java","id":"sourceFile"}
+    org.springframework.boot.loader.zip.DataBlock dataBlock -> a
+    long pos -> b
+    long remaining -> c
+    boolean closed -> d
+    39:42:void <init>(org.springframework.boot.loader.zip.DataBlock) -> <init>
+    46:47:int read() -> read
+    52:59:int read(byte[],int,int) -> read
+    1088:1091:void ensureOpen():88:91 -> read
+    1088:1091:int read(byte[],int,int):52 -> read
+    64:67:long skip(long) -> skip
+    2071:2072:long maxForwardSkip(long):71:72 -> skip
+    2071:2072:long skip(long):64 -> skip
+    2076:2076:long maxBackwardSkip(long):76:76 -> skip
+    2076:2076:long skip(long):64 -> skip
+    81:84:int available() -> available
+    95:102:void close() -> close
+org.springframework.boot.loader.zip.FileDataBlock -> org.springframework.boot.loader.e.e:
+# {"fileName":"FileDataBlock.java","id":"sourceFile"}
+    org.springframework.boot.loader.log.DebugLogger debug -> b
+    org.springframework.boot.loader.zip.FileDataBlock$Tracker tracker -> a
+    org.springframework.boot.loader.zip.FileDataBlock$FileAccess fileAccess -> c
+    long offset -> d
+    long size -> e
+    51:55:void <init>(java.nio.file.Path) -> <init>
+    57:61:void <init>(org.springframework.boot.loader.zip.FileDataBlock$FileAccess,long,long) -> <init>
+    65:65:long size() -> a
+    70:87:int read(java.nio.ByteBuffer,long) -> a
+    1116:1117:void ensureOpen(java.util.function.Supplier):116:117 -> a
+    1116:1117:int read(java.nio.ByteBuffer,long):73 -> a
+    96:97:void open() -> c
+    106:107:void close() -> close
+    128:128:org.springframework.boot.loader.zip.FileDataBlock slice(long) -> a
+    140:150:org.springframework.boot.loader.zip.FileDataBlock slice(long,long) -> a
+    41:43:void <clinit>() -> <clinit>
+org.springframework.boot.loader.zip.FileDataBlock$FileAccess -> org.springframework.boot.loader.e.f:
+# {"fileName":"FileDataBlock.java","id":"sourceFile"}
+    java.nio.file.Path path -> a
+    int referenceCount -> b
+    java.nio.channels.FileChannel fileChannel -> c
+    boolean fileChannelInterrupted -> d
+    java.io.RandomAccessFile randomAccessFile -> e
+    java.nio.ByteBuffer buffer -> f
+    long bufferPosition -> g
+    int bufferSize -> h
+    java.lang.Object lock -> i
+    172:183:void <init>(java.nio.file.Path) -> <init>
+    186:198:int read(java.nio.ByteBuffer,long) -> a
+    1202:1219:void fillBuffer(long):202:219 -> a
+    1202:1219:int read(java.nio.ByteBuffer,long):188 -> a
+    1238:1241:void repairFileChannel():238:241 -> a
+    1238:1241:void fillBuffer(long):208 -> a
+    1238:1241:int read(java.nio.ByteBuffer,long):188 -> a
+    222:235:void fillBufferUsingRandomAccessFile(long) -> a
+    244:254:void open() -> a
+    257:278:void close() -> b
+    281:286:void ensureOpen(java.util.function.Supplier) -> a
+    290:290:java.lang.String toString() -> toString
+org.springframework.boot.loader.zip.FileDataBlock$Tracker -> org.springframework.boot.loader.e.g:
+# {"fileName":"FileDataBlock.java","id":"sourceFile"}
+    org.springframework.boot.loader.zip.FileDataBlock$Tracker$1 NONE$7b5dd7c2 -> a
+    300:300:void <clinit>() -> <clinit>
+org.springframework.boot.loader.zip.FileDataBlock$Tracker$1 -> org.springframework.boot.loader.e.h:
+# {"fileName":"FileDataBlock.java","id":"sourceFile"}
+    300:300:void <init>() -> <init>
+org.springframework.boot.loader.zip.NameOffsetLookups -> org.springframework.boot.loader.e.i:
+# {"fileName":"NameOffsetLookups.java","id":"sourceFile"}
+    org.springframework.boot.loader.zip.NameOffsetLookups NONE -> a
+    int offset -> b
+    java.util.BitSet enabled -> c
+    36:39:void <init>(int,int) -> <init>
+    42:47:void swap(int,int) -> a
+    50:50:int get(int) -> a
+    54:57:int enable(int,boolean) -> a
+    61:61:boolean isEnabled(int) -> b
+    65:65:boolean hasAnyEnabled() -> a
+    69:69:org.springframework.boot.loader.zip.NameOffsetLookups emptyCopy() -> b
+    30:30:void <clinit>() -> <clinit>
+org.springframework.boot.loader.zip.VirtualDataBlock -> org.springframework.boot.loader.e.j:
+# {"fileName":"VirtualDataBlock.java","id":"sourceFile"}
+    org.springframework.boot.loader.zip.DataBlock[] parts -> a
+    long[] offsets -> b
+    long size -> c
+    int lastReadPart -> d
+    37:44:void <init>() -> <init>
+    61:71:void setParts(java.util.Collection) -> a
+    75:75:long size() -> a
+    80:105:int read(java.nio.ByteBuffer,long) -> a
+    61:61:org.springframework.boot.loader.zip.DataBlock[] lambda$setParts$0(int) -> a
+org.springframework.boot.loader.zip.VirtualZipDataBlock -> org.springframework.boot.loader.e.k:
+# {"fileName":"VirtualZipDataBlock.java","id":"sourceFile"}
+    org.springframework.boot.loader.zip.CloseableDataBlock data -> a
+    44:71:void <init>(org.springframework.boot.loader.zip.FileDataBlock,org.springframework.boot.loader.zip.NameOffsetLookups,org.springframework.boot.loader.zip.ZipCentralDirectoryFileHeaderRecord[],long[]) -> <init>
+    1075:1086:long addToCentral$c792597(java.util.List,org.springframework.boot.loader.zip.ZipCentralDirectoryFileHeaderRecord,long,org.springframework.boot.loader.zip.VirtualZipDataBlock$DataPart,int):75:86 -> <init>
+    1075:1086:void <init>(org.springframework.boot.loader.zip.FileDataBlock,org.springframework.boot.loader.zip.NameOffsetLookups,org.springframework.boot.loader.zip.ZipCentralDirectoryFileHeaderRecord[],long[]):63 -> <init>
+    1092:1104:long addToLocal$318e910d(java.util.List,org.springframework.boot.loader.zip.ZipCentralDirectoryFileHeaderRecord,org.springframework.boot.loader.zip.ZipLocalFileHeaderRecord,org.springframework.boot.loader.zip.ZipDataDescriptorRecord,org.springframework.boot.loader.zip.VirtualZipDataBlock$DataPart,org.springframework.boot.loader.zip.VirtualZipDataBlock$DataPart):92:104 -> <init>
+    1092:1104:void <init>(org.springframework.boot.loader.zip.FileDataBlock,org.springframework.boot.loader.zip.NameOffsetLookups,org.springframework.boot.loader.zip.ZipCentralDirectoryFileHeaderRecord[],long[]):64 -> <init>
+    109:110:void close() -> close
+org.springframework.boot.loader.zip.VirtualZipDataBlock$DataPart -> org.springframework.boot.loader.e.l:
+# {"fileName":"VirtualZipDataBlock.java","id":"sourceFile"}
+    long offset -> a
+    long size -> b
+    org.springframework.boot.loader.zip.VirtualZipDataBlock this$0 -> c
+    121:124:void <init>(org.springframework.boot.loader.zip.VirtualZipDataBlock,long,long) -> <init>
+    128:128:long size() -> a
+    133:146:int read(java.nio.ByteBuffer,long) -> a
+org.springframework.boot.loader.zip.Zip64EndOfCentralDirectoryLocator -> org.springframework.boot.loader.e.m:
+# {"fileName":"Zip64EndOfCentralDirectoryLocator.java","id":"sourceFile"}
+    long pos -> a
+    int numberOfThisDisk -> b
+    long offsetToZip64EndOfCentralDirectoryRecord -> c
+    int totalNumberOfDisks -> d
+    org.springframework.boot.loader.log.DebugLogger debug -> e
+    39:39:void <init>(long,int,long,int) -> <init>
+    61:77:org.springframework.boot.loader.zip.Zip64EndOfCentralDirectoryLocator find$50c9a85f(org.springframework.boot.loader.zip.FileDataBlock,long) -> a
+    39:39:java.lang.String toString() -> toString
+    39:39:int hashCode() -> hashCode
+    39:39:boolean equals(java.lang.Object) -> equals
+    39:39:long pos() -> a
+    39:39:long offsetToZip64EndOfCentralDirectoryRecord() -> b
+    42:42:void <clinit>() -> <clinit>
+org.springframework.boot.loader.zip.Zip64EndOfCentralDirectoryRecord -> org.springframework.boot.loader.e.n:
+# {"fileName":"Zip64EndOfCentralDirectoryRecord.java","id":"sourceFile"}
+    long size -> a
+    long sizeOfZip64EndOfCentralDirectoryRecord -> b
+    short versionMadeBy -> c
+    short versionNeededToExtract -> d
+    int numberOfThisDisk -> e
+    int diskWhereCentralDirectoryStarts -> f
+    long numberOfCentralDirectoryEntriesOnThisDisk -> g
+    long totalNumberOfCentralDirectoryEntries -> h
+    long sizeOfCentralDirectory -> i
+    long offsetToStartOfCentralDirectory -> j
+    org.springframework.boot.loader.log.DebugLogger debug -> k
+    46:46:void <init>(long,long,short,short,int,int,long,long,long,long) -> <init>
+    68:86:org.springframework.boot.loader.zip.Zip64EndOfCentralDirectoryRecord load$27013dc6(org.springframework.boot.loader.zip.FileDataBlock,org.springframework.boot.loader.zip.Zip64EndOfCentralDirectoryLocator) -> a
+    46:46:java.lang.String toString() -> toString
+    46:46:int hashCode() -> hashCode
+    46:46:boolean equals(java.lang.Object) -> equals
+    46:46:long size() -> a
+    46:46:long totalNumberOfCentralDirectoryEntries() -> b
+    46:46:long sizeOfCentralDirectory() -> c
+    46:46:long offsetToStartOfCentralDirectory() -> d
+    51:51:void <clinit>() -> <clinit>
+org.springframework.boot.loader.zip.ZipCentralDirectoryFileHeaderRecord -> org.springframework.boot.loader.e.o:
+# {"fileName":"ZipCentralDirectoryFileHeaderRecord.java","id":"sourceFile"}
+    short versionMadeBy -> a
+    short versionNeededToExtract -> b
+    short generalPurposeBitFlag -> c
+    short compressionMethod -> d
+    short lastModFileTime -> e
+    short lastModFileDate -> f
+    int crc32 -> g
+    int compressedSize -> h
+    int uncompressedSize -> i
+    short fileNameLength -> j
+    short extraFieldLength -> k
+    short fileCommentLength -> l
+    short diskNumberStart -> m
+    short internalFileAttributes -> n
+    int externalFileAttributes -> o
+    int offsetToLocalHeader -> p
+    org.springframework.boot.loader.log.DebugLogger debug -> q
+    54:54:void <init>(short,short,short,short,short,short,int,int,int,short,short,short,short,short,int,int) -> <init>
+    75:75:long size() -> a
+    1054:1054:short fileNameLength():54:54 -> a
+    1054:1054:long size():75 -> a
+    2054:2054:short extraFieldLength():54:54 -> a
+    2054:2054:long size():75 -> a
+    3054:3054:short fileCommentLength():54:54 -> a
+    3054:3054:long size():75 -> a
+    86:104:void copyTo$7255c72b(org.springframework.boot.loader.zip.FileDataBlock,long,java.util.zip.ZipEntry) -> a
+    4054:4054:short fileNameLength():54:54 -> a
+    4054:4054:void copyTo$7255c72b(org.springframework.boot.loader.zip.FileDataBlock,long,java.util.zip.ZipEntry):86 -> a
+    5054:5054:short extraFieldLength():54:54 -> a
+    5054:5054:void copyTo$7255c72b(org.springframework.boot.loader.zip.FileDataBlock,long,java.util.zip.ZipEntry):87 -> a
+    6054:6054:short fileCommentLength():54:54 -> a
+    6054:6054:void copyTo$7255c72b(org.springframework.boot.loader.zip.FileDataBlock,long,java.util.zip.ZipEntry):88 -> a
+    7054:7054:short compressionMethod():54:54 -> a
+    7054:7054:void copyTo$7255c72b(org.springframework.boot.loader.zip.FileDataBlock,long,java.util.zip.ZipEntry):89 -> a
+    8054:8054:short lastModFileDate():54:54 -> a
+    8054:8054:void copyTo$7255c72b(org.springframework.boot.loader.zip.FileDataBlock,long,java.util.zip.ZipEntry):90 -> a
+    9054:9054:short lastModFileTime():54:54 -> a
+    9054:9054:void copyTo$7255c72b(org.springframework.boot.loader.zip.FileDataBlock,long,java.util.zip.ZipEntry):90 -> a
+    9115:9124:long decodeMsDosFormatDateTime(short,short):115:124 -> a
+    9115:9124:void copyTo$7255c72b(org.springframework.boot.loader.zip.FileDataBlock,long,java.util.zip.ZipEntry):90 -> a
+    10054:10054:int crc32():54:54 -> a
+    10054:10054:void copyTo$7255c72b(org.springframework.boot.loader.zip.FileDataBlock,long,java.util.zip.ZipEntry):91 -> a
+    11054:11054:int compressedSize():54:54 -> a
+    11054:11054:void copyTo$7255c72b(org.springframework.boot.loader.zip.FileDataBlock,long,java.util.zip.ZipEntry):92 -> a
+    12054:12054:int uncompressedSize():54:54 -> a
+    12054:12054:void copyTo$7255c72b(org.springframework.boot.loader.zip.FileDataBlock,long,java.util.zip.ZipEntry):93 -> a
+    128:129:int getChronoValue(long,java.time.temporal.ChronoField) -> a
+    139:143:org.springframework.boot.loader.zip.ZipCentralDirectoryFileHeaderRecord withFileNameLength(short) -> a
+    153:157:org.springframework.boot.loader.zip.ZipCentralDirectoryFileHeaderRecord withOffsetToLocalHeader(int) -> a
+    165:184:byte[] asByteArray() -> b
+    195:208:org.springframework.boot.loader.zip.ZipCentralDirectoryFileHeaderRecord load$589d4a87(org.springframework.boot.loader.zip.FileDataBlock,long) -> a
+    54:54:java.lang.String toString() -> toString
+    54:54:int hashCode() -> hashCode
+    54:54:boolean equals(java.lang.Object) -> equals
+    54:54:short generalPurposeBitFlag() -> c
+    54:54:short compressionMethod() -> d
+    54:54:int compressedSize() -> e
+    54:54:int uncompressedSize() -> f
+    54:54:short fileNameLength() -> g
+    54:54:short extraFieldLength() -> h
+    54:54:short fileCommentLength() -> i
+    54:54:int offsetToLocalHeader() -> j
+    59:59:void <clinit>() -> <clinit>
+org.springframework.boot.loader.zip.ZipContent -> org.springframework.boot.loader.e.p:
+# {"fileName":"ZipContent.java","id":"sourceFile"}
+    byte[] SIGNATURE_SUFFIX -> a
+    org.springframework.boot.loader.log.DebugLogger debug -> b
+    java.util.Map cache -> c
+    org.springframework.boot.loader.zip.ZipContent$Source source -> d
+    org.springframework.boot.loader.zip.ZipContent$Kind kind -> e
+    org.springframework.boot.loader.zip.FileDataBlock data -> f
+    long centralDirectoryPos -> g
+    long commentPos -> h
+    long commentLength -> i
+    int[] lookupIndexes -> j
+    int[] nameHashLookups -> k
+    int[] relativeCentralDirectoryOffsetLookups -> l
+    org.springframework.boot.loader.zip.NameOffsetLookups nameOffsetLookups -> m
+    boolean hasJarSignatureFile -> n
+    java.lang.ref.SoftReference virtualData -> o
+    java.lang.ref.SoftReference info -> p
+    101:113:void <init>(org.springframework.boot.loader.zip.ZipContent$Source,org.springframework.boot.loader.zip.ZipContent$Kind,org.springframework.boot.loader.zip.FileDataBlock,long,long,long,int[],int[],int[],org.springframework.boot.loader.zip.NameOffsetLookups,boolean) -> <init>
+    121:121:org.springframework.boot.loader.zip.ZipContent$Kind getKind() -> a
+    142:143:org.springframework.boot.loader.zip.CloseableDataBlock openRawZipData() -> b
+    1147:1153:org.springframework.boot.loader.zip.CloseableDataBlock getVirtualData():147:153 -> b
+    1147:1153:org.springframework.boot.loader.zip.CloseableDataBlock openRawZipData():143 -> b
+    1157:1168:org.springframework.boot.loader.zip.VirtualZipDataBlock createVirtualData$685364b7():157:168 -> b
+    1157:1168:org.springframework.boot.loader.zip.CloseableDataBlock getVirtualData():151 -> b
+    1157:1168:org.springframework.boot.loader.zip.CloseableDataBlock openRawZipData():143 -> b
+    1176:1176:int size():176:176 -> b
+    1176:1176:org.springframework.boot.loader.zip.VirtualZipDataBlock createVirtualData$685364b7():157 -> b
+    1176:1176:org.springframework.boot.loader.zip.CloseableDataBlock getVirtualData():151 -> b
+    1176:1176:org.springframework.boot.loader.zip.CloseableDataBlock openRawZipData():143 -> b
+    176:176:int size() -> c
+    185:191:java.lang.String getComment() -> d
+    201:201:org.springframework.boot.loader.zip.ZipContent$Entry getEntry(java.lang.CharSequence) -> a
+    211:222:org.springframework.boot.loader.zip.ZipContent$Entry getEntry(java.lang.CharSequence,java.lang.CharSequence) -> a
+    2176:2176:int size():176:176 -> a
+    2176:2176:org.springframework.boot.loader.zip.ZipContent$Entry getEntry(java.lang.CharSequence,java.lang.CharSequence):213 -> a
+    232:243:boolean hasEntry(java.lang.CharSequence,java.lang.CharSequence) -> b
+    3176:3176:int size():176:176 -> b
+    3176:3176:boolean hasEntry(java.lang.CharSequence,java.lang.CharSequence):234 -> b
+    253:256:org.springframework.boot.loader.zip.ZipContent$Entry getEntry(int) -> a
+    261:267:org.springframework.boot.loader.zip.ZipCentralDirectoryFileHeaderRecord loadZipCentralDirectoryFileHeaderRecord(long) -> a
+    272:275:int nameHash(java.lang.CharSequence,java.lang.CharSequence) -> c
+    279:286:int getFirstLookupIndex(int) -> b
+    290:290:long getCentralDirectoryFileHeaderRecordPos(int) -> c
+    295:307:boolean hasName(int,org.springframework.boot.loader.zip.ZipCentralDirectoryFileHeaderRecord,long,java.lang.CharSequence,java.lang.CharSequence) -> a
+    319:324:java.lang.Object getInfo(java.lang.Class,java.util.function.Function) -> a
+    336:336:boolean hasJarSignatureFile() -> e
+    345:346:void close() -> close
+    350:350:java.lang.String toString() -> toString
+    361:361:org.springframework.boot.loader.zip.ZipContent open(java.nio.file.Path) -> a
+    373:373:org.springframework.boot.loader.zip.ZipContent open(java.nio.file.Path,java.lang.String) -> a
+    377:392:org.springframework.boot.loader.zip.ZipContent open(org.springframework.boot.loader.zip.ZipContent$Source) -> a
+    325:326:java.lang.Object lambda$getInfo$0(java.lang.Class,java.util.function.Function,java.lang.Class) -> a
+    67:71:void <clinit>() -> <clinit>
+org.springframework.boot.loader.zip.ZipContent$Entry -> org.springframework.boot.loader.e.q:
+# {"fileName":"ZipContent.java","id":"sourceFile"}
+    int lookupIndex -> a
+    org.springframework.boot.loader.zip.ZipCentralDirectoryFileHeaderRecord centralRecord -> b
+    java.lang.String name -> c
+    org.springframework.boot.loader.zip.FileDataBlock content -> d
+    org.springframework.boot.loader.zip.ZipContent this$0 -> e
+    709:712:void <init>(org.springframework.boot.loader.zip.ZipContent,int,org.springframework.boot.loader.zip.ZipCentralDirectoryFileHeaderRecord) -> <init>
+    720:720:int getLookupIndex() -> a
+    728:728:boolean isDirectory() -> b
+    737:743:boolean hasNameStartingWith(java.lang.CharSequence) -> a
+    752:760:java.lang.String getName() -> c
+    770:770:int getCompressionMethod() -> d
+    778:778:int getUncompressedSize() -> e
+    791:793:org.springframework.boot.loader.zip.FileDataBlock openContent$685364b7() -> f
+    797:807:org.springframework.boot.loader.zip.FileDataBlock getContent() -> g
+    811:814:void checkNotZip64Extended(int) -> a
+    823:823:java.util.zip.ZipEntry as(java.util.function.Function) -> a
+    834:840:java.util.zip.ZipEntry as(java.util.function.BiFunction) -> a
+    823:823:java.util.zip.ZipEntry lambda$as$0(java.util.function.Function,org.springframework.boot.loader.zip.ZipContent$Entry,java.lang.String) -> a
+org.springframework.boot.loader.zip.ZipContent$Kind -> org.springframework.boot.loader.e.r:
+# {"fileName":"ZipContent.java","id":"sourceFile"}
+    org.springframework.boot.loader.zip.ZipContent$Kind ZIP -> a
+    org.springframework.boot.loader.zip.ZipContent$Kind NESTED_ZIP -> b
+    org.springframework.boot.loader.zip.ZipContent$Kind NESTED_DIRECTORY -> c
+    org.springframework.boot.loader.zip.ZipContent$Kind[] $VALUES -> d
+    400:400:org.springframework.boot.loader.zip.ZipContent$Kind[] values() -> values
+    400:400:org.springframework.boot.loader.zip.ZipContent$Kind valueOf(java.lang.String) -> valueOf
+    400:400:void <init>(java.lang.String,int) -> <init>
+    400:415:void <clinit>() -> <clinit>
+    1400:1400:org.springframework.boot.loader.zip.ZipContent$Kind[] $values():400:400 -> <clinit>
+    1400:1400:void <clinit>():400 -> <clinit>
+org.springframework.boot.loader.zip.ZipContent$Loader -> org.springframework.boot.loader.e.s:
+# {"fileName":"ZipContent.java","id":"sourceFile"}
+    java.nio.ByteBuffer buffer -> a
+    org.springframework.boot.loader.zip.ZipContent$Source source -> b
+    org.springframework.boot.loader.zip.FileDataBlock data -> c
+    long centralDirectoryPos -> d
+    int[] index -> e
+    int[] nameHashLookups -> f
+    int[] relativeCentralDirectoryOffsetLookups -> g
+    org.springframework.boot.loader.zip.NameOffsetLookups nameOffsetLookups -> h
+    int cursor -> i
+    448:475:void <init>(org.springframework.boot.loader.zip.ZipContent$Source,org.springframework.boot.loader.zip.ZipContent$Entry,org.springframework.boot.loader.zip.FileDataBlock,long,int) -> <init>
+    479:487:void add(org.springframework.boot.loader.zip.ZipCentralDirectoryFileHeaderRecord,long,boolean) -> a
+    490:501:org.springframework.boot.loader.zip.ZipContent finish(org.springframework.boot.loader.zip.ZipContent$Kind,long,long,boolean) -> a
+    508:532:void sort(int,int) -> a
+    535:539:void swap(int,int) -> b
+    542:545:void swap(int[],int,int) -> a
+    548:558:org.springframework.boot.loader.zip.ZipContent load(org.springframework.boot.loader.zip.ZipContent$Source) -> a
+    1562:1563:org.springframework.boot.loader.zip.ZipContent loadNonNested(org.springframework.boot.loader.zip.ZipContent$Source):562:563 -> a
+    1562:1563:org.springframework.boot.loader.zip.ZipContent load(org.springframework.boot.loader.zip.ZipContent$Source):549 -> a
+    1567:1572:org.springframework.boot.loader.zip.ZipContent loadNestedZip(org.springframework.boot.loader.zip.ZipContent$Source,org.springframework.boot.loader.zip.ZipContent$Entry):567:572 -> a
+    1567:1572:org.springframework.boot.loader.zip.ZipContent load(org.springframework.boot.loader.zip.ZipContent$Source):557 -> a
+    577:582:org.springframework.boot.loader.zip.ZipContent openAndLoad(org.springframework.boot.loader.zip.ZipContent$Source,org.springframework.boot.loader.zip.ZipContent$Kind,org.springframework.boot.loader.zip.FileDataBlock) -> a
+    1587:1623:org.springframework.boot.loader.zip.ZipContent loadContent(org.springframework.boot.loader.zip.ZipContent$Source,org.springframework.boot.loader.zip.ZipContent$Kind,org.springframework.boot.loader.zip.FileDataBlock):587:623 -> a
+    1587:1623:org.springframework.boot.loader.zip.ZipContent openAndLoad(org.springframework.boot.loader.zip.ZipContent$Source,org.springframework.boot.loader.zip.ZipContent$Kind,org.springframework.boot.loader.zip.FileDataBlock):578 -> a
+    1638:1642:long getStartOfZipContent(org.springframework.boot.loader.zip.FileDataBlock,org.springframework.boot.loader.zip.ZipEndOfCentralDirectoryRecord,org.springframework.boot.loader.zip.Zip64EndOfCentralDirectoryRecord):638:642 -> a
+    1638:1642:org.springframework.boot.loader.zip.ZipContent loadContent(org.springframework.boot.loader.zip.ZipContent$Source,org.springframework.boot.loader.zip.ZipContent$Kind,org.springframework.boot.loader.zip.FileDataBlock):592 -> a
+    1638:1642:org.springframework.boot.loader.zip.ZipContent openAndLoad(org.springframework.boot.loader.zip.ZipContent$Source,org.springframework.boot.loader.zip.ZipContent$Kind,org.springframework.boot.loader.zip.FileDataBlock):578 -> a
+    1647:1654:long getSizeOfCentralDirectoryAndEndRecords(org.springframework.boot.loader.zip.ZipEndOfCentralDirectoryRecord,org.springframework.boot.loader.zip.Zip64EndOfCentralDirectoryRecord):647:654 -> a
+    1647:1654:long getStartOfZipContent(org.springframework.boot.loader.zip.FileDataBlock,org.springframework.boot.loader.zip.ZipEndOfCentralDirectoryRecord,org.springframework.boot.loader.zip.Zip64EndOfCentralDirectoryRecord):640 -> a
+    1647:1654:org.springframework.boot.loader.zip.ZipContent loadContent(org.springframework.boot.loader.zip.ZipContent$Source,org.springframework.boot.loader.zip.ZipContent$Kind,org.springframework.boot.loader.zip.FileDataBlock):592 -> a
+    1647:1654:org.springframework.boot.loader.zip.ZipContent openAndLoad(org.springframework.boot.loader.zip.ZipContent$Source,org.springframework.boot.loader.zip.ZipContent$Kind,org.springframework.boot.loader.zip.FileDataBlock):578 -> a
+    659:684:org.springframework.boot.loader.zip.ZipContent loadNestedDirectory(org.springframework.boot.loader.zip.ZipContent$Source,org.springframework.boot.loader.zip.ZipContent,org.springframework.boot.loader.zip.ZipContent$Entry) -> a
+org.springframework.boot.loader.zip.ZipContent$Source -> org.springframework.boot.loader.e.t:
+# {"fileName":"ZipContent.java","id":"sourceFile"}
+    java.nio.file.Path path -> a
+    java.lang.String nestedEntryName -> b
+    425:425:void <init>(java.nio.file.Path,java.lang.String) -> <init>
+    432:432:boolean isNested() -> a
+    437:437:java.lang.String toString() -> toString
+    1425:1425:java.nio.file.Path path():425:425 -> toString
+    1425:1425:java.lang.String toString():437 -> toString
+    2425:2425:java.nio.file.Path path():425:425 -> toString
+    2425:2425:java.lang.String toString():437 -> toString
+    3425:3425:java.lang.String nestedEntryName():425:425 -> toString
+    3425:3425:java.lang.String toString():437 -> toString
+    425:425:int hashCode() -> hashCode
+    425:425:boolean equals(java.lang.Object) -> equals
+    425:425:java.nio.file.Path path() -> b
+    425:425:java.lang.String nestedEntryName() -> c
+org.springframework.boot.loader.zip.ZipDataDescriptorRecord -> org.springframework.boot.loader.e.u:
+# {"fileName":"ZipDataDescriptorRecord.java","id":"sourceFile"}
+    boolean includeSignature -> a
+    int crc32 -> b
+    int compressedSize -> c
+    int uncompressedSize -> d
+    org.springframework.boot.loader.log.DebugLogger debug -> e
+    36:36:void <init>(boolean,int,int,int) -> <init>
+    47:47:long size() -> a
+    1036:1036:boolean includeSignature():36:36 -> a
+    1036:1036:long size():47 -> a
+    55:63:byte[] asByteArray() -> b
+    74:87:org.springframework.boot.loader.zip.ZipDataDescriptorRecord load$66bbc581(org.springframework.boot.loader.zip.CloseableDataBlock,long) -> a
+    107:107:boolean isPresentBasedOnFlag(org.springframework.boot.loader.zip.ZipCentralDirectoryFileHeaderRecord) -> a
+    1117:1117:boolean isPresentBasedOnFlag(int):117:117 -> a
+    1117:1117:boolean isPresentBasedOnFlag(org.springframework.boot.loader.zip.ZipCentralDirectoryFileHeaderRecord):107 -> a
+    36:36:java.lang.String toString() -> toString
+    36:36:int hashCode() -> hashCode
+    36:36:boolean equals(java.lang.Object) -> equals
+    38:38:void <clinit>() -> <clinit>
+org.springframework.boot.loader.zip.ZipEndOfCentralDirectoryRecord -> org.springframework.boot.loader.e.v:
+# {"fileName":"ZipEndOfCentralDirectoryRecord.java","id":"sourceFile"}
+    short numberOfThisDisk -> a
+    short diskWhereCentralDirectoryStarts -> b
+    short numberOfCentralDirectoryEntriesOnThisDisk -> c
+    short totalNumberOfCentralDirectoryEntries -> d
+    int sizeOfCentralDirectory -> e
+    int offsetToStartOfCentralDirectory -> f
+    short commentLength -> g
+    org.springframework.boot.loader.log.DebugLogger debug -> h
+    50:52:void <init>(short,int,int) -> <init>
+    44:44:void <init>(short,short,short,short,int,int,short) -> <init>
+    76:76:long size() -> a
+    84:94:byte[] asByteArray() -> b
+    106:110:org.springframework.boot.loader.zip.ZipEndOfCentralDirectoryRecord$Located load$3c0c3158(org.springframework.boot.loader.zip.FileDataBlock) -> a
+    1114:1137:long locate(org.springframework.boot.loader.zip.DataBlock,java.nio.ByteBuffer):114:137 -> a
+    1114:1137:org.springframework.boot.loader.zip.ZipEndOfCentralDirectoryRecord$Located load$3c0c3158(org.springframework.boot.loader.zip.FileDataBlock):108 -> a
+    1141:1147:int findInBuffer(java.nio.ByteBuffer):141:147 -> a
+    1141:1147:long locate(org.springframework.boot.loader.zip.DataBlock,java.nio.ByteBuffer):130 -> a
+    1141:1147:org.springframework.boot.loader.zip.ZipEndOfCentralDirectoryRecord$Located load$3c0c3158(org.springframework.boot.loader.zip.FileDataBlock):108 -> a
+    44:44:java.lang.String toString() -> toString
+    44:44:int hashCode() -> hashCode
+    44:44:boolean equals(java.lang.Object) -> equals
+    44:44:short totalNumberOfCentralDirectoryEntries() -> c
+    44:44:int sizeOfCentralDirectory() -> d
+    44:44:int offsetToStartOfCentralDirectory() -> e
+    44:44:short commentLength() -> f
+    54:54:void <clinit>() -> <clinit>
+org.springframework.boot.loader.zip.ZipEndOfCentralDirectoryRecord$Located -> org.springframework.boot.loader.e.w:
+# {"fileName":"ZipEndOfCentralDirectoryRecord.java","id":"sourceFile"}
+    long pos -> a
+    org.springframework.boot.loader.zip.ZipEndOfCentralDirectoryRecord endOfCentralDirectoryRecord -> b
+    156:156:void <init>(long,org.springframework.boot.loader.zip.ZipEndOfCentralDirectoryRecord) -> <init>
+    156:156:java.lang.String toString() -> toString
+    156:156:int hashCode() -> hashCode
+    156:156:boolean equals(java.lang.Object) -> equals
+    156:156:long pos() -> a
+    156:156:org.springframework.boot.loader.zip.ZipEndOfCentralDirectoryRecord endOfCentralDirectoryRecord() -> b
+org.springframework.boot.loader.zip.ZipLocalFileHeaderRecord -> org.springframework.boot.loader.e.x:
+# {"fileName":"ZipLocalFileHeaderRecord.java","id":"sourceFile"}
+    short versionNeededToExtract -> a
+    short generalPurposeBitFlag -> b
+    short compressionMethod -> c
+    short lastModFileTime -> d
+    short lastModFileDate -> e
+    int crc32 -> f
+    int compressedSize -> g
+    int uncompressedSize -> h
+    short fileNameLength -> i
+    short extraFieldLength -> j
+    org.springframework.boot.loader.log.DebugLogger debug -> k
+    42:42:void <init>(short,short,short,short,short,int,int,int,short,short) -> <init>
+    57:57:long size() -> a
+    1042:1042:short fileNameLength():42:42 -> a
+    1042:1042:long size():57 -> a
+    2042:2042:short extraFieldLength():42:42 -> a
+    2042:2042:long size():57 -> a
+    78:78:org.springframework.boot.loader.zip.ZipLocalFileHeaderRecord withFileNameLength(short) -> a
+    88:101:byte[] asByteArray() -> b
+    112:122:org.springframework.boot.loader.zip.ZipLocalFileHeaderRecord load$4eced3fa(org.springframework.boot.loader.zip.CloseableDataBlock,long) -> a
+    42:42:java.lang.String toString() -> toString
+    42:42:int hashCode() -> hashCode
+    42:42:boolean equals(java.lang.Object) -> equals
+    42:42:short extraFieldLength() -> c
+    46:46:void <clinit>() -> <clinit>
+org.springframework.boot.loader.zip.ZipString -> org.springframework.boot.loader.e.y:
+# {"fileName":"ZipString.java","id":"sourceFile"}
+    org.springframework.boot.loader.log.DebugLogger debug -> a
+    int[] INITIAL_BYTE_BITMASK -> b
+    int EMPTY_HASH -> c
+    int EMPTY_SLASH_HASH -> d
+    49:50:void <init>() -> <init>
+    72:89:int hash(int,java.lang.CharSequence,boolean) -> a
+    104:137:int hash$7ef59a90(java.nio.ByteBuffer,org.springframework.boot.loader.zip.FileDataBlock,long,int,boolean) -> a
+    154:163:boolean matches$3551bf7d(java.nio.ByteBuffer,org.springframework.boot.loader.zip.FileDataBlock,long,int,java.lang.CharSequence,boolean) -> a
+    179:187:int startsWith$1b84aae(java.nio.ByteBuffer,org.springframework.boot.loader.zip.FileDataBlock,long,int,java.lang.CharSequence) -> a
+    193:239:int compare$1f9de11e(java.nio.ByteBuffer,org.springframework.boot.loader.zip.DataBlock,long,int,java.lang.CharSequence,int) -> a
+    243:243:boolean hasEnoughBytes(int,int,int) -> a
+    247:247:boolean endsWith(java.lang.CharSequence,char) -> a
+    251:251:char getChar(java.lang.CharSequence,int) -> a
+    263:272:java.lang.String readString(org.springframework.boot.loader.zip.DataBlock,long,long) -> a
+    278:291:int readInBuffer(org.springframework.boot.loader.zip.DataBlock,long,java.nio.ByteBuffer,int,int) -> a
+    295:305:int getCodePointSize(byte[],int) -> a
+    309:314:int getCodePoint(byte[],int,int) -> a
+    37:47:void <clinit>() -> <clinit>
+org.springframework.boot.loader.zip.ZipString$CompareType -> org.springframework.boot.loader.e.z:
+# {"fileName":"ZipString.java","id":"sourceFile"}
+    int MATCHES$52633030 -> a
+    int MATCHES_ADDING_SLASH$52633030 -> b
+    int STARTS_WITH$52633030 -> c
+    int[] $VALUES$2f09e56b -> d
+    320:320:int[] values$2871bfea() -> values$2871bfea
+    320:322:void <clinit>() -> <clinit>
+    1320:1320:int[] $values$2871bfea():320:320 -> <clinit>
+    1320:1320:void <clinit>():320 -> <clinit>
