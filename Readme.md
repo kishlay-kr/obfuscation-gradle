@@ -1,0 +1,2 @@
+- Install Gradle in the system
+- Use the command -> gradle -b applications.gradle proguard
